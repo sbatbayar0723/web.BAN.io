@@ -18,8 +18,6 @@ ul {
     min-height: 400px;
     margin-right: 60px;
     font-size: 17px;
-
-    
 }
 
 ul li {
@@ -34,7 +32,6 @@ ul li a {
     transition: 0.5 ease;
 }
 
-<<<<<<< HEAD
 .logo img {
     position: absolute;
     width: 128px;
@@ -89,20 +86,3 @@ nav {
     margin-top: 40px;
     margin-left: 0px;
 }
-=======
-.logo{
-    position: absolute;
-    width: 128px;
-    height: 124px;
-    left: 600px;
-    top: 0px;
-}
-
-img{
-    width: 80px;
-    height: 80px;
-}
-
-
-
->>>>>>> 7636df0bf82ecc469bc23a77bfd5f2bf0389bd88

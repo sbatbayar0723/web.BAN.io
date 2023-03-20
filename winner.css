@@ -31,3 +31,16 @@ ul li a {
     border: 1px solid transparent;
     transition: 0.5 ease;
 }
+
+.logo{
+    position: absolute;
+width: 128px;
+height: 124px;
+left: 576px;
+top: 0px;
+
+background: url(bcc-removebg-preview.png);
+mix-blend-mode: normal;
+filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.5));
+
+}

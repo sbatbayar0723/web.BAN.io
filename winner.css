@@ -40,12 +40,3 @@ left: 576px;
 top: 0px;
 }
 
-nav{
-    position: absolute;
-width: 1280px;
-height: 52px;
-left: 0px;
-top: 128px;
-
-background: rgba(0, 0, 0, 0.49);
-}

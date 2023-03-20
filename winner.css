@@ -31,3 +31,14 @@ ul li a {
     border: 1px solid transparent;
     transition: 0.5 ease;
 }
+
+.logo img {
+    float: center;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}

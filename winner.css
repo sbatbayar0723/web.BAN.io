@@ -9,13 +9,16 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 700px;
+
+
 }
 
 .logo{
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     width: 80px;
     height: 80px;
+    padding-left: 900px;
 }
 
 .icon{
@@ -44,7 +47,6 @@ header {
  
 }
 
-
 body {
     background-repeat: no-repeat, repeat;
     position: absolute;
@@ -53,7 +55,7 @@ body {
 }
 
 .topnav {
-    position: fixed;
+    position: absolute;
     top: 80px;
     width: 100%;
     background-color: rgba(3, 3, 3, 0.5);
@@ -78,11 +80,8 @@ body {
 .title {
     position: absolute;
     top: 10%;
-    /* This positions the title underneath the navigation bar */
     left: 50%;
-    /* This centers the title horizontally */
     transform: translateX(-50%);
-    /* This centers the title horizontally */
     width: 548px;
     height: 230px;
     line-height: 85px;
@@ -92,7 +91,6 @@ body {
     animation-name: fadeIn;
     animation-duration: 5s;
 }
-
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -106,26 +104,34 @@ div h1 {
 }
 
 
+
 /* Main Section Styles */
 
+ 
 section {
-    padding: 20px;
+    position: relative;
+    padding: 120px;
     border-bottom: 1px solid #ccc;
 }
 
 section div {
-    position: absolute;
+    position: relative;
     float: left;
     padding: 100px;
 }
 
 section div img {
-    float: left;
+
     width: 400px;
     height: 400px;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    
 }
 
 section img {
+    position: relative;
     width: 300px;
     height: 300px;
 }

@@ -6,7 +6,9 @@
 header{
     background-image: url('1pic.jpg');
     background-size: cover; 
-    padding-bottom: 840px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 700px;
 }
 header img{
    display: block;
@@ -20,13 +22,14 @@ body {
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
+    background-color: beige;
 }
 
 .topnav {
     position: relative;
     overflow: hidden;
     background-color: rgba(3,3,3,0.5);
-    padding-left: 0px;
+    padding-left: 100px;
 
 }
   
@@ -56,7 +59,7 @@ body {
 
 .title {
     position: absolute;
-    top: 5%; /* This positions the title underneath the navigation bar */
+    top: 10%; /* This positions the title underneath the navigation bar */
     left: 50%; /* This centers the title horizontally */
     transform: translateX(-50%); /* This centers the title horizontally */
     width: 548px;
@@ -76,7 +79,7 @@ div h1{
 
 /* Main Section Styles */
 section {
-    padding: 420px 20px;
+    padding:20px;
     border-bottom: 1px solid #ccc;
 }
 section div{
@@ -86,7 +89,6 @@ section div img{
     float: left;
     width: 800px;
     height: 500px;
-    padding-bottom: 200px;
 }
 
 section img{
@@ -101,9 +103,10 @@ section h2 {
 }
 
 section p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
+
 }
 
 section ul {
@@ -134,4 +137,8 @@ section article p {
 
 section img {
     margin-right: 10px;
+}
+
+.aboutUs{
+
 }

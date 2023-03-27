@@ -83,7 +83,7 @@ section {
     border-bottom: 1px solid #ccc;
 }
 section div{
-    display: block;
+    float: left;
     padding-bottom: 200px;
 }
 section div img{ 

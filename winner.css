@@ -3,11 +3,21 @@
     padding: 0px;
 }
 
+:root {
+    --main-color: #c8f2f6;
+    --nav-bg-color: rgba(3, 3, 3, 0.5);
+    --nav-link-color: #f2f2f2;
+    --nav-link-hover-bg-color: #ddd;
+    --title-color: #fff;
+    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+    }
+
 header {
     background-image: url('1pic.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-color: var(--main-color);
     padding-bottom: 700px;
 
 
@@ -51,20 +61,20 @@ body {
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
-    background-color: #c8f2f6;
+    background-color: var(--main-color);
 }
 
 .topnav {
     position: absolute;
     top: 80px;
     width: 100%;
-    background-color: rgba(3, 3, 3, 0.5);
+    background-color: var(--nav-bg-color);
     padding-left: 100px;
 }
 
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: var(--nav-link-color);
     text-align: center;
     padding: 14px 50px;
     text-decoration: none;
@@ -73,7 +83,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: var(--nav-link-hover-bg-color);
     color: black;
 }
 
@@ -86,8 +96,8 @@ body {
     height: 230px;
     line-height: 85px;
     text-align: center;
-    color: #fff;
-    text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+    color: var(--title-color);
+    text-shadow: var(--title-text-shadow);
     animation-name: fadeIn;
     animation-duration: 5s;
 }

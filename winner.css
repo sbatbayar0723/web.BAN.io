@@ -1,31 +1,24 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
-
-header {
+header{
     background-image: url('1pic.jpg');
-    background-size: cover;
+    background-size: cover; 
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 700px;
 }
-
-header img {
-    display: block;
-    margin: 0 auto;
-    background-size: cover;
-    padding-bottom: 700px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto;
+header img{
+   display: block;
+   margin: 0 auto;
     width: 80px;
     height: 80px;
 }
 
 body {
+
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
@@ -35,31 +28,28 @@ body {
 .topnav {
     position: relative;
     overflow: hidden;
-    background-color: rgba(3, 3, 3, 0.5);
+    background-color: rgba(3,3,3,0.5);
     padding-left: 100px;
-    /*Menunii ard talin background*/
-    overflow: hidden;
-    background-color: rgba(3, 3, 3, 0.5);
-    padding-left: 0px;
-}
 
+}
+  
 .topnav a {
-    /*Menu-nii position */
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px 50px;
+    padding: 14px 50px;
     text-decoration: none;
     font-size: 17px;
 }
-
+  
 .topnav a:hover {
-    /*Menu-n deer mouse ochih uyd ungu n uurchlugdunu*/
     background-color: #ddd;
     color: black;
 }
+  
 
-.logo {
+
+.logo{
     position: absolute;
     width: 128px;
     height: 124px;
@@ -69,27 +59,18 @@ body {
 
 .title {
     position: absolute;
-    top: 10%;
-    /* This positions the title underneath the navigation bar */
-    left: 50%;
-    /* This centers the title horizontally */
-    transform: translateX(-50%);
-    /* This centers the title horizontally */
-    top: 5%;
-    /* This positions the title underneath the navigation bar */
-    left: 50%;
-    /* This centers the title horizontally */
-    transform: translateX(-50%);
-    /* This centers the title horizontally */
+    top: 10%; /* This positions the title underneath the navigation bar */
+    left: 50%; /* This centers the title horizontally */
+    transform: translateX(-50%); /* This centers the title horizontally */
     width: 548px;
     height: 230px;
     line-height: 85px;
     text-align: center;
     color: #fff;
     text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
-}
+  }
 
-div h1 {
+div h1{
     font-style: italic;
     font-weight: lighter;
     font-size: 100px;
@@ -97,40 +78,22 @@ div h1 {
 
 
 /* Main Section Styles */
-
 section {
-    padding: 20px;
+    padding:20px;
     border-bottom: 1px solid #ccc;
 }
-
-section div {
-    display: block;
+section div{
+    float: left;
     padding-bottom: 200px;
 }
-
-section div img {
+section div img{ 
+    
     float: left;
     width: 800px;
     height: 500px;
-    margin: 20px;
-    padding: 0px;
-    border-bottom: 1px solid #ccc;
 }
 
-section div {
-    padding-bottom: 200px;
-}
-
-section div p {}
-
-section div img {
-    float: left;
-    width: 800px;
-    height: 500px;
-    padding-bottom: 20px;
-}
-
-section img {
+section img{
     width: 300px;
     height: 300px;
 }
@@ -138,13 +101,14 @@ section img {
 section h2 {
     font-weight: bold;
     font-size: 28px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 section p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
+
 }
 
 section ul {
@@ -177,4 +141,6 @@ section img {
     margin-right: 10px;
 }
 
-.aboutUs {}
+.aboutUs{
+
+}

@@ -1,24 +1,24 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
-header{
+
+header {
     background-image: url('1pic.jpg');
-    background-size: cover; 
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 700px;
 }
-header img{
-   display: block;
-   margin: 0 auto;
+
+header img {
+    display: block;
+    margin: 0 auto;
     width: 80px;
     height: 80px;
 }
 
 body {
-
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
@@ -28,11 +28,10 @@ body {
 .topnav {
     position: relative;
     overflow: hidden;
-    background-color: rgba(3,3,3,0.5);
+    background-color: rgba(3, 3, 3, 0.5);
     padding-left: 100px;
-
 }
-  
+
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -41,15 +40,13 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-  
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-  
 
-
-.logo{
+.logo {
     position: absolute;
     width: 128px;
     height: 124px;
@@ -59,18 +56,21 @@ body {
 
 .title {
     position: absolute;
-    top: 10%; /* This positions the title underneath the navigation bar */
-    left: 50%; /* This centers the title horizontally */
-    transform: translateX(-50%); /* This centers the title horizontally */
+    top: 10%;
+    /* This positions the title underneath the navigation bar */
+    left: 50%;
+    /* This centers the title horizontally */
+    transform: translateX(-50%);
+    /* This centers the title horizontally */
     width: 548px;
     height: 230px;
     line-height: 85px;
     text-align: center;
     color: #fff;
     text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
-  }
+}
 
-div h1{
+div h1 {
     font-style: italic;
     font-weight: lighter;
     font-size: 100px;
@@ -78,22 +78,24 @@ div h1{
 
 
 /* Main Section Styles */
+
 section {
-    padding:20px;
+    padding: 20px;
     border-bottom: 1px solid #ccc;
 }
-section div{
+
+section div {
     float: left;
     padding-bottom: 200px;
 }
-section div img{ 
-    
+
+section div img {
     float: left;
     width: 800px;
     height: 500px;
 }
 
-section img{
+section img {
     width: 300px;
     height: 300px;
 }
@@ -108,7 +110,6 @@ section p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
-
 }
 
 section ul {
@@ -139,8 +140,4 @@ section article p {
 
 section img {
     margin-right: 10px;
-}
-
-.aboutUs{
-
 }

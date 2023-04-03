@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-color: #c8f2f6;
+    --main-color: #F0F0F1;
     --nav-bg-color: rgba(3, 3, 3, 0.5);
     --nav-link-color: #f2f2f2;
     --nav-link-hover-bg-color: #ddd;
@@ -28,11 +28,12 @@ header {
     margin: 0 auto;
     width: 80px;
     height: 80px;
-    padding-left: 900px;
+    padding-left: 650px;
 }
 
 .icon{
     float: right;
+    padding-top: 8px;
     position: relative;
     width: 40px;
     height: 40px;
@@ -43,6 +44,7 @@ header {
 .icon1{
     float: right;
     position: relative;
+    padding-top: 8px;
     width: 30px;
     height: 30px;
     top: 15px;
@@ -51,6 +53,8 @@ header {
 .icon2{
     float: right;
     position: relative;
+    padding-right: 30px;
+    padding-top: 8px;
     width: 30px;
     height: 30px;
     top: 15px;
@@ -111,6 +115,16 @@ div h1 {
     font-style: italic;
     font-weight: lighter;
     font-size: 100px;
+}
+
+.aboutUs{
+    text-align: center;
+}
+
+.us{
+    width: 630px;
+    height: 640px;
+    padding-top: 220px;
 }
 
 

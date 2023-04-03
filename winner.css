@@ -116,8 +116,9 @@ body {
     color: var(--title-color);
     text-shadow: var(--title-text-shadow);
     animation-name: fadeIn;
-    animation-duration: 5s;
+    animation-duration: 6.9s;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }

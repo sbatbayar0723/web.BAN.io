@@ -54,7 +54,7 @@ header {
 .icon2{
     float: right;
     position: relative;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-top: 8px;
     width: 30px;
     height: 30px;
@@ -141,7 +141,6 @@ div h1 {
 }
 
 
-
 /* Main Section Styles */
 
  
@@ -217,7 +216,8 @@ section img {
 
 button {
     position: static;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
     float: left;
     padding: 10px 20px;
     background-color: var(--nav-bg-color);

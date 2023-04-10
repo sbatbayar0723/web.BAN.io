@@ -3,8 +3,11 @@
 }
 
 body {
-  background-color: #F5F5F5;
-  font-family: Arial, sans-serif;
+  background-color: #1f154b;
+  font-family: 'Inter', sans-serif;
+  background-image: url(loginlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -47,4 +50,23 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #007FFF;
+}
+
+label:hover {
+  color: #1E90FF;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(30, 144, 255, 0.5);
+}
+
+input:invalid {
+  background-color: #FFE5E5;
+  border: 1px solid #FF5555;
+}
+
+input[type="submit"]:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
 }

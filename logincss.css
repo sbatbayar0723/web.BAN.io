@@ -2,10 +2,10 @@ body {
   float: right;
   margin: 0;
   padding-right: 300px;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #1f154b;
   background-image: url(loginlogo.png);
-  background-size:contain;
+  background-size:  auto;
   background-repeat: no-repeat;
 }
 

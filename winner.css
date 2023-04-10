@@ -12,6 +12,9 @@
     --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
 }
 
+
+/*Page1 background*/
+
 header {
     background-image: url('1pic.jpg');
     background-size: cover;
@@ -21,6 +24,9 @@ header {
     padding-bottom: 700px;
 }
 
+
+/*Page 1 logo undsem logo*/
+
 .logo {
     display: inline-block;
     margin: 0 auto;
@@ -28,6 +34,9 @@ header {
     height: 80px;
     padding-left: 515px;
 }
+
+
+/*facebook logo*/
 
 .icon {
     float: right;
@@ -39,6 +48,9 @@ header {
     right: 10px;
 }
 
+
+/*instagram logo*/
+
 .icon1 {
     float: right;
     position: relative;
@@ -48,6 +60,9 @@ header {
     top: 15px;
     right: 8px;
 }
+
+
+/*Youtube logo*/
 
 .icon2 {
     float: right;
@@ -59,12 +74,20 @@ header {
     top: 15px;
 }
 
-.icon:hover,
-.icon1:hover,
-.icon2:hover {
+
+/*icons mouse event scale */
+
+.icon:hover {
     transform: scale(1.2);
 }
 
+.icon1:hover {
+    transform: scale(1.2);
+}
+
+.icon2:hover {
+    transform: scale(1.2);
+}
 
 body {
     background-repeat: no-repeat, repeat;
@@ -73,27 +96,35 @@ body {
     background-color: var(--main-color);
 }
 
+
+/*Menu design*/
+
 .topnav {
-    position: absolute;
-    top: 80px;
+    margin: auto;
     width: 100%;
     background-color: var(--nav-bg-color);
-    padding-left: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .topnav a {
-    float: left;
     color: var(--nav-link-color);
     text-align: center;
-    padding: 14px 50px;
+    padding: 15px 50px;
     text-decoration: none;
     font-size: 17px;
 }
+
+
+/*Menu design mouse event*/
 
 .topnav a:hover {
     background-color: var(--nav-link-hover-bg-color);
     color: black;
 }
+
+
+/*Winner's course taxt design*/
 
 .title {
     position: absolute;
@@ -119,15 +150,24 @@ body {
     }
 }
 
+
+/*Winner's course font design*/
+
 div h1 {
     font-style: italic;
     font-weight: lighter;
     font-size: 100px;
 }
 
+
+/*About us section*/
+
 .aboutUs {
     text-align: center;
 }
+
+
+/*About us image*/
 
 .us {
     width: 630px;
@@ -170,18 +210,28 @@ section img {
 
 /*Why our courses, Our Team Members design */
 
-.Team h2 {
+
+/*.Team h2 {
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 20px;
-}
+}*/
 
-.Team {
-    margin-bottom: auto;
+
+/*.Team {
+    /* margin-bottom: auto;
     padding: auto;
     background-color: #A3BBDD;
     color: #2c3e50;
-}
+    position: absolute;
+    width: 1280px;
+    height: 487px;
+    left: 0px;
+    top: 0px;
+
+background: #060607;
+
+}*/
 
 section p {
     font-size: 20px;
@@ -189,16 +239,71 @@ section p {
     margin-bottom: 20px;
 }
 
-section ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
+
+/*Our team members*/
+
+
+/*.titlee {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #a3bbda;
+    background-image: url("Bat.png"), url("Nar.png"), url("Ami.png");
+    background-repeat: no-repeat;
+    background-size: 320px 320px, 320px 320px, 320px 320px;
+    background-position: 150px 150px, 550px 150px, 950px 150px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}*/
+
+
+/*.titlee {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient( to top, #ffffff 0%, #ffffff 50%, #a3bbda 50%, #a3bbda 100%);
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
-section li {
+img {
+    position: absolute;
+    width: 50%;
+    /*top: 0;
+    left: 25%;
+    width: 320px;
+    height: 320px;
+}*/
+
+section ul {
+    margin-left: 500px;
+    margin-bottom: 500px;
+}
+
+
+/*section li {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-}
+    position: absolute;
+    width: 296px;
+    height: 37px;
+    left: 492px;
+    top: 661px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}*/
 
 section article {
     margin-bottom: 20px;
@@ -233,4 +338,25 @@ button {
 
 button:hover {
     background-color: black;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: #eee;
+    }
+    h1 {
+        color: red;
+    }
+}
+
+
+/* мобайл хөтөчийн хэсгийг харуулах */
+
+@media only screen and (max-width: 991px) {
+    body {
+        background-color: #aaa;
+    }
+    h1 {
+        color: blue;
+    }
 }

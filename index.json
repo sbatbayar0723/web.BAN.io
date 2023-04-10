@@ -1,0 +1,45 @@
+{
+    "Course name": "IELTS",
+    "Instractor": "Temka",
+    "Price": "190.000₮"
+    "schedule": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "9:00 AM",
+          "endTime": "10:30 AM",
+          "location": "Room A101"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "9:00 AM",
+          "endTime": "10:30 AM",
+          "location": "Room A101"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:00 AM",
+          "endTime": "11:30 AM",
+          "location": "Room B202"
+        }
+      ],
+      "students": [
+        {
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "email": "jane.doe@example.com",
+          "grade": 95
+        },
+        {
+          "firstName": "John",
+          "lastName": "Smith",
+          "email": "john.smith@example.com",
+          "grade": 88
+        },
+        {
+          "firstName": "Alice",
+          "lastName": "Johnson",
+          "email": "alice.johnson@example.com",
+          "grade": 91
+        }
+      ]
+}

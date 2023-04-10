@@ -34,4 +34,3 @@ form.addEventListener('submit', function(event) {
     return;
   }
 });
-  // If form is valid, you could send the data to a server here.

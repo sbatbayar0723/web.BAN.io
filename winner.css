@@ -340,7 +340,7 @@ button:hover {
     background-color: black;
 }
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
     body {
         background-color: #eee;
     }
@@ -359,4 +359,4 @@ button:hover {
     h1 {
         color: blue;
     }
-}
+} */

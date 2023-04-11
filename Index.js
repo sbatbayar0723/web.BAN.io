@@ -7,5 +7,6 @@ aboutUsLink.addEventListener('click', function(event) {
   
   event.preventDefault();
 
+
   aboutUsSection.scrollIntoView({ behavior: 'smooth' });
 });

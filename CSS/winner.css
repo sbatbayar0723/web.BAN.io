@@ -16,7 +16,7 @@
 /*Page1 background*/
 
 header {
-    background-image: url('Pictures/page1background.jpg');
+    background-image: url('page1background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body {
 
 .title {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 548px;

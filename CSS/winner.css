@@ -161,7 +161,7 @@ div h1 {
   align-items: center;
   padding: 50px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: beige;
 }
 
 .aboutUs h2 {
@@ -194,7 +194,7 @@ div h1 {
     padding: 50px;
     text-align: center;
     border-bottom: 1px solid #ccc;
-    background-color: #e3e3e3;
+    background-color:azure;
   }
   
   .team .titlee {

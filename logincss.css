@@ -4,8 +4,8 @@ body {
   padding-right: 300px;
   font-family: 'Inter', sans-serif;
   background-color: #1f154b;
-  background-image: url(loginlogo.png);
-  background-size:  auto;
+  background-image: url(Pictures/loginlogo.png);
+  background-size:  contain;
   background-repeat: no-repeat;
 }
 

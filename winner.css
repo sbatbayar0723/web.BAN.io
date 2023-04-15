@@ -77,17 +77,10 @@ header {
 
 /*icons mouse event scale */
 
-.icon:hover {
+.icon:hover, .icon1:hover, .icon2:hover{
     transform: scale(1.2);
 }
 
-.icon1:hover {
-    transform: scale(1.2);
-}
-
-.icon2:hover {
-    transform: scale(1.2);
-}
 
 body {
     background-repeat: no-repeat, repeat;

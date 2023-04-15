@@ -9,21 +9,22 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 </style>
 </head>
-<body>
-  <a href="index.html"><button type="submit">Back</button></a>
-  <div class="container">
-    <h1>Login</h1>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      
-      <button type="submit">Login</button>
-    </form>
-    <p class="account">Don't have an account? <a href="Sign Up.html" class="sign">Sign up</a></p>
-  </div>
+
+<body>  
+  <a class="back" href="javascript:history.back()">Back</a>
+          <div class="container">
+            <h1>Login</h1>
+            <form id="login-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+              
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              
+              <button type="submit">Login</button>
+            </form>
+            <p class="account">Don't have an account? <a href="Sign Up.html" class="sign">Sign up</a></p>
+          </div>
 
   <script src="Javascript/app.js"></script>
 </body>

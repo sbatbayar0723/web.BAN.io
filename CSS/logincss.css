@@ -3,10 +3,22 @@ body {
   margin: 0;
   padding-right: 300px;
   font-family: 'Inter', sans-serif;
-  background-color:azure;
+  background-color:rgb(253, 253, 253);
   background-image: url(logInlogo.png);
   background-size:  contain;
   background-repeat: no-repeat;
+}
+
+.back {
+  background-color: grey;
+  border-radius: 5%;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-left: -900px;
 }
 
 .container {
@@ -66,7 +78,7 @@ p {
 }
 
 .sign{
-  color: lightblue;
+  color: #007bff;
 }
 
 a{

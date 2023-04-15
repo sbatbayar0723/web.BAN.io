@@ -1,14 +1,32 @@
 # web.BAN.io
 
-# terminal дээрээс
+ 
 
+ # Заавар
+
+## terminal дээрээс
+
+```c
  git clone https: //github.com/sbatbayar0723/web.BAN.io.git
- 
- # push
- #git add .
- #git commit -m "Comment bicheerei"
- #git push origin check out
- 
+```
 
- 
+```git
+git checkout -b "neree bich"
+```
+
+### Happy 150th commit 🥳🥳🎉
+
+## push
+
+```git
+git add .
+git commit -m "comment bich"
+git push origin checkout deeer uussen branch
+```
+
+## Анхаарах
+
+1. Сонгож авсан файлаасаа өөр файл оролдохгүй байх.
+2. Нэгийг анхаарах.
+
  

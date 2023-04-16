@@ -156,11 +156,10 @@ div h1 {
 /*About us section*/
 
 .aboutUs {
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: beige;
 }
 
@@ -176,14 +175,16 @@ div h1 {
 }
 
 .aboutUs img {
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  width: 60%;
 }
-
+.aboutUs-content{
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
   
   
 

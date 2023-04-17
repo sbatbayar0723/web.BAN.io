@@ -94,7 +94,7 @@ body {
     position: absolute;
     font-family: 'Inter', sans-serif;
     background-image: url(logInlogo.png);
-    background-size: 70%;
+    background-size: 80%;
     background-color: var(--main-color);
 }
 

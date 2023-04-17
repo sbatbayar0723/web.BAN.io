@@ -10,9 +10,6 @@
  git clone https: //github.com/sbatbayar0723/web.BAN.io.git
 ```
 
-```git
-git checkout -b "neree bich"
-```
 
 ### Happy 150th commit 🥳🥳🎉
 
@@ -21,7 +18,6 @@ git checkout -b "neree bich"
 ```git
 git add .
 git commit -m "comment bich"
-git push origin checkout deeer uussen branch
 ```
 
 ## Анхаарах

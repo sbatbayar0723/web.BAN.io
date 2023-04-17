@@ -93,6 +93,8 @@ body {
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
+    background-image: url(logInlogo.png);
+    background-size: 70%;
     background-color: var(--main-color);
 }
 
@@ -183,6 +185,7 @@ div h1 {
 
 section {
     position: relative;
+    text-align: center;
     padding: 120px;
     border-bottom: 1px solid #ccc;
 }
@@ -306,7 +309,7 @@ section ul {
 }*/
 
 section article {
-    margin-bottom: 20px;
+    padding: 30px;
 }
 
 section article h3 {

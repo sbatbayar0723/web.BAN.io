@@ -237,6 +237,7 @@ text-align: center;
   margin-left: 55px;
   margin-right: 30px;
   margin-top: -52px;
+  margin-bottom: 10px;
 }
 
 h3.OurEnglishCourse + p {
@@ -264,7 +265,7 @@ grid-row-gap: 40px;
 } 
 .content1:hover, .content2:hover, .content3:hover, .content4:hover{
 transform: scale(105%);
-background-color: rgb(244, 185, 58);
+background-color: rgb(255, 201, 86);
 }
 
 .content1{
@@ -279,7 +280,7 @@ box-shadow: 1px 5px 30px -16px black;
 width: auto;
 color:rgba(0, 0, 0, 0.9);
 transition: 0.25s ease-in-out;
-border-left: 6px solid rgb(244, 185, 58);
+border-left: 6px solid rgb(255, 201, 86);
 box-shadow: 1px 5px 30px -16px black; 
 }
 
@@ -287,7 +288,7 @@ box-shadow: 1px 5px 30px -16px black;
 width: auto;
 color:rgba(0, 0, 0, 0.9);
 transition: 0.25s ease-in-out;
-border-left: 6px solid rgb(244, 185, 58);
+border-left: 6px solid rgb(255, 201, 86);
 box-shadow: 1px 5px 30px -16px black;
 }
 
@@ -295,7 +296,7 @@ box-shadow: 1px 5px 30px -16px black;
 width: auto;
 color:rgba(0, 0, 0, 0.9);
 transition: 0.25s ease-in-out;
-border-left: 6px solid rgb(244, 185, 58);
+border-left: 6px solid rgb(255, 201, 86);
 box-shadow: 1px 5px 30px -16px black;
 
 }

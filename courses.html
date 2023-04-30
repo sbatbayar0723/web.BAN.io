@@ -10,7 +10,7 @@
     <meta name="description" content=" Монголын хүн болгоныг Англи хэлтэй болгох зорилготой Англи хэлний Сургалт!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>News</title>
+    <title>Courses</title>
     <link rel="stylesheet" href="CSS/courses.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
@@ -39,30 +39,21 @@
         </nav>
     </header>
 
-     <section>
-        <h2>Why Our Courses?</h2>
-        <article>
-            <h3>Learn real English</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque adipiscing commodo elit at imperdiet
-                dui accumsan. Ornare lectus sit amet est placerat.</p>
-        </article>
-        <article>
-            <h3>Understand fast English</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque adipiscing commodo elit at imperdiet dui
-                accumsan. Ornare lectus sit amet est placerat.</p>
-        </article>
-        <article>
-            <h3>Speak natural English</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque adipiscing commodo elit at imperdiet
-                dui accumsan. Ornare lectus sit amet est placerat.</p>
-        </article>
-        <article>
-            <h3>Enjoy using English</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque adipiscing commodo elit at imperdiet
-                dui accumsan. Ornare lectus sit amet est placerat.</p>
-        </article>
-    </section>
-
+    <english-course-chooser>
+        <form>
+            <label for="course-select">Choose a course:</label>
+            <select id="course-select">
+              <option value="beginner">Beginner English</option>
+              <option value="intermediate">Intermediate English</option>
+              <option value="advanced">Advanced English</option>
+              <option value="advanced">IELTS</option>
+            </select>
+            <button type="submit">Enroll</button>
+          </form>
+          <slot name="header"></slot>
+        <slot name="footer"></slot>
+    </english-course-chooser>      
+    
 
     <footer>
         <address>
@@ -72,7 +63,7 @@
         </address>
 
     </footer>
-    <script src="Index.js"></script>
+    <script src="Courses.js"></script>
 </body>
 
 </html>

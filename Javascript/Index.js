@@ -9,13 +9,13 @@ fetch('index.json')
     console.error('Error:', error);
   });
 
-// const aboutUsLink = document.querySelector('a[href="#aboutus"]');
+ const aboutUsLink = document.querySelector('a[href="#aboutus"]');
 
-// const aboutUsSection = document.querySelector('.aboutUs');
+ const aboutUsSection = document.querySelector('.aboutUs');
 
-// aboutUsLink.addEventListener('click', function(event) {
+ aboutUsLink.addEventListener('click', function(event) {
   
-//   event.preventDefault();
+   event.preventDefault();
 
-//   aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-// });
+   aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+ });

@@ -233,17 +233,17 @@ footer {
   justify-content: space-between;
   padding: 30px;
   font-family: Arial, sans-serif;
-  border-top: 1px solid #fff; /* Add a white line to the top of the footer */
+  border-top: 1px solid #fff; 
 }
 
 
-/* Left side of footer */
+/* Zuun footer */
 .footer-left {
   flex-basis: 50%;
   text-align: left;
 }
 
-/* Right side of footer */
+/* Baruun footer */
 .footer-right {
   flex-basis: 50%;
   text-align: right;

@@ -29,35 +29,18 @@ header {
   height: 75px;
 }
 
-/*facebook logo*/
-.icon1 {
+/*social media icon*/
+.icons {
   width: 30px;
   height: 30px;
   float: right;
   display: flex;
-  align-items: center;    
+  align-items: center;  
+  padding: 5px;  
 } 
 
-/*instagram logo*/
-.icon2 {
-  width: 30px;
-  height: 30px;
-  float: right;
-  display: flex;
-  align-items: center;   
-}
-
-/*Youtube logo*/
-.icon3 {
-  width: 30px;
-  height: 30px;
-  float: right;  
-  display: flex;
-  align-items: center;
-}
-
 /*icons mouse event scale */
-.icon1:hover, .icon2:hover, .icon3:hover{
+.icons:hover{
   transform: scale(1.2);
 }
 
@@ -468,9 +451,23 @@ footer {
   text-align: center;
 }
 
+.footer1{
+  display: flex;
+}
+
+.footer3{
+  display: inline-flex;
+  float: right;
+}
+
 footer p {
   margin: 0;
   font-size: 1.2rem;
+}
+
+.footer-icon{
+  width: 40px;
+  height: 40px;
 }
 
 

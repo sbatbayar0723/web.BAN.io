@@ -447,7 +447,12 @@ button:hover {
   color: #444;
   font-size: 20px;
 }
-
+.telephone{
+  background-color: white;
+  border-radius: 30%;
+  width:40px;
+  height: 40px;
+}
 
 
 

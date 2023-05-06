@@ -55,19 +55,20 @@ body {
 
 /* Navigation */
 .topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--nav-bg-color);
-  color: #fff;
-  padding-left: 50px;
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--nav-bg-color);
 }
 
 .topnav a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: var(--nav-link-color);
+    width: 14.28%;
+    padding: 15px 50px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
 }
 
 .topnav a:hover {
@@ -469,7 +470,6 @@ footer p {
   width: 40px;
   height: 40px;
 }
-
 
 
 

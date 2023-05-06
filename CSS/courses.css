@@ -82,32 +82,101 @@ body {
 }
 
 
-/*Menu design*/
-
+/* Navigation */
 .topnav {
-    margin: auto;
-    width: 100%;
-    background-color: var(--nav-bg-color);
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  color: #fff;
+  padding-left: 50px;
 }
 
 .topnav a {
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 15px 50px;
-    text-decoration: none;
-    font-size: 17px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--nav-link-color);
 }
-
-
-/*Menu design mouse event*/
 
 .topnav a:hover {
-    background-color: var(--nav-link-hover-bg-color);
-    color: black;
+  background-color: var(--nav-link-hover-bg-color);
+  color: #333;
 }
 
+.active {
+  color: #333;
+}
+
+.sidenav {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.sidenav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+  }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    top: 60px;
+    display: block;
+  }
+}
 
 
 
@@ -121,13 +190,6 @@ body {
 }
 
 
-/*Winner's course font design*/
-
-div h1 {
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 100px;
-}
 
 
 button {
@@ -145,19 +207,6 @@ button {
 button:hover {
     background-color: black;
 }
-
-
-
-/* мобайл хөтөчийн хэсгийг харуулах */
-
-@media only screen and (max-width: 991px) {
-    body {
-        background-color: #aaa;
-    }
-    h1 {
-        color: blue;
-    }
-} 
 
 
 /* Style the label */
@@ -204,6 +253,41 @@ english-course-chooser label {
     align-items: center;
     justify-content: center;
   }
+
+ 
+  
+  h2,h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
   
 
  /* Footer styling */
@@ -212,15 +296,15 @@ english-course-chooser label {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 40px;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    
   }
   
   footer p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   

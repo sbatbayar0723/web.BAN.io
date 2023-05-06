@@ -13,19 +13,8 @@
 }
 
 
-/*Page1 background*/
 
-/*header {
-    background-image: url('Pictures/1pic.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: var(--main-color);
-    padding-bottom: 700px;
-}*/
-
-
-/*Page 1 logo undsem logo*/
+/*Page 1 logo undsen logo*/
 
 .logo {
     display: inline-block;
@@ -77,19 +66,12 @@
 
 /*icons mouse event scale */
 
-.icon:hover {
-    transform: scale(1.2);
-}
-
-.icon1:hover {
-    transform: scale(1.2);
-}
-
-.icon2:hover {
+.icon:hover,.icon1:hover,.icon2:hover {
     transform: scale(1.2);
 }
 
 body {
+    width: 100%;
     background-repeat: no-repeat, repeat;
     position: absolute;
     font-family: 'Inter', sans-serif;
@@ -99,49 +81,102 @@ body {
 }
 
 
-/*Menu design*/
-
+/* Navigation */
 .topnav {
-    margin: auto;
-    width: 100%;
-    background-color: var(--nav-bg-color);
     display: flex;
-    justify-content: center;
-}
-
-.topnav a {
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    color: #fff;
+    padding-left: 50px;
+  }
+  
+  .topnav a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    font-size: 17px;
-}
-
-
-/*Menu design mouse event*/
-
-.topnav a:hover {
+    color: var(--nav-link-color);
+  }
+  
+  .topnav a:hover {
     background-color: var(--nav-link-hover-bg-color);
-    color: black;
-}
-
-
-/*Winner's course taxt design*/
-
-/*.title {
+    color: #333;
+  }
+  
+  .active {
+    color: #333;
+  }
+  
+  .sidenav {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+  }
+  
+  .sidenav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .closebtn {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 548px;
-    height: 230px;
-    line-height: 85px;
-    text-align: center;
-    color: var(--title-color);
-    text-shadow: var(--title-text-shadow);
-    animation-name: fadeIn;
-    animation-duration: 5s;
-}*/
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .icon {
+    display: none;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: center;
+    }
+    .sidenav {
+      width: 100%;
+      height: auto;
+      top: 60px;
+      display: block;
+    }
+  }
+
 
 @keyframes fadeIn {
     from {
@@ -162,20 +197,6 @@ div h1 {
 }
 
 
-/*About us section*/
-
-/*.aboutUs {
-    text-align: center;
-}
-*/
-
-/*About us image*/
-/*
-.us {
-    width: 630px;
-    height: 640px;
-    padding-top: 220px;
-}*/
 
 
 /* Main Section Styles */
@@ -209,123 +230,6 @@ section img {
     height: 300px;
 }
 
-
-/*Why our courses, Our Team Members design */
-
-
-/*.Team h2 {
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 20px;
-}*/
-
-
-/*.Team {
-    /* margin-bottom: auto;
-    padding: auto;
-    background-color: #A3BBDD;
-    color: #2c3e50;
-    position: absolute;
-    width: 1280px;
-    height: 487px;
-    left: 0px;
-    top: 0px;
-
-background: #060607;
-
-}*/
-
-section p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-
-/*Our team members*/
-
-
-/*.titlee {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background-color: #a3bbda;
-    background-image: url("Bat.png"), url("Nar.png"), url("Ami.png");
-    background-repeat: no-repeat;
-    background-size: 320px 320px, 320px 320px, 320px 320px;
-    background-position: 150px 150px, 550px 150px, 950px 150px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}*/
-
-
-/*.titlee {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient( to top, #ffffff 0%, #ffffff 50%, #a3bbda 50%, #a3bbda 100%);
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
-
-img {
-    position: absolute;
-    width: 50%;
-    /*top: 0;
-    left: 25%;
-    width: 320px;
-    height: 320px;
-}*/
-
-section ul {
-    margin-left: 500px;
-    margin-bottom: 500px;
-}
-
-
-/*section li {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    position: absolute;
-    width: 296px;
-    height: 37px;
-    left: 492px;
-    top: 661px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 31px;
-    text-align: center;
-    color: #000000;
-}*/
-
-section article {
-    margin-bottom: 20px;
-}
-
-section article h3 {
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-section article p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-section img {
-    margin-right: 10px;
-}
-
 button {
     position: static;
     margin: 20px;
@@ -341,27 +245,7 @@ button {
 button:hover {
     background-color: black;
 }
-
-/* @media only screen and (min-width: 992px) {
-    body {
-        background-color: #eee;
-    }
-    h1 {
-        color: red;
-    }
-}
-
-
-/* мобайл хөтөчийн хэсгийг харуулах */
-
-@media only screen and (max-width: 991px) {
-    body {
-        background-color: #aaa;
-    }
-    h1 {
-        color: blue;
-    }
-} 
+ 
 
  /* Footer styling */
  footer {

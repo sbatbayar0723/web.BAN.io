@@ -63,37 +63,111 @@ header {
 
 /* Body Background */
 body {
+  width: 100%;
   position: absolute;
   font-family: 'Inter', sans-serif;
   background-repeat: no-repeat, repeat;
   background-color: var(--main-color);
 }
 
-/*Menu design*/
+/* Navigation */
 .topnav {
-  margin: auto;
-  width: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--nav-bg-color);
+  color: #fff;
+  padding-left: 50px;
 }
 
 .topnav a {
-  width: 14.28%;
-  padding: 15px 50px;
-  font-size: 17px;
-  text-align: center;
+  display: block;
+  padding: 10px;
   text-decoration: none;
   color: var(--nav-link-color);
 }
 
-/*Menu design mouse event*/
 .topnav a:hover {
-  color: black;
   background-color: var(--nav-link-hover-bg-color);
+  color: #333;
 }
 
-/*Winner's course taxt design*/
+.active {
+  color: #333;
+}
+
+.sidenav {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.sidenav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+  }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    top: 60px;
+    display: block;
+  }
+}
+
+
+/*Winner's course text design*/
 .title {
   width: 548px;
   height: 230px;
@@ -318,18 +392,7 @@ footer p {
   font-size: 1.2rem;
 }
 
-/* мобайл хөтөчийн хэсгийг харуулах */
-body{
-  width: 100%;
-}
 
-@media only screen and (max-width: 991px) {
-  body {
-      background-color: #aaa;
-  }
-  h1 {
-      color: blue;
-  }
-} 
+
 
 

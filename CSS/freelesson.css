@@ -81,31 +81,101 @@ body {
 }
 
 
-/*Menu design*/
-
+/* Navigation */
 .topnav {
-    margin: auto;
-    width: 100%;
-    background-color: var(--nav-bg-color);
     display: flex;
-    justify-content: center;
-}
-
-.topnav a {
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    color: #fff;
+    padding-left: 50px;
+  }
+  
+  .topnav a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    font-size: 17px;
-}
-
-
-/*Menu design mouse event*/
-
-.topnav a:hover {
+    color: var(--nav-link-color);
+  }
+  
+  .topnav a:hover {
     background-color: var(--nav-link-hover-bg-color);
-    color: black;
-}
+    color: #333;
+  }
+  
+  .active {
+    color: #333;
+  }
+  
+  .sidenav {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+  }
+  
+  .sidenav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .icon {
+    display: none;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: center;
+    }
+    .sidenav {
+      width: 100%;
+      height: auto;
+      top: 60px;
+      display: block;
+    }
+  }
 
 
 /*Section class about us design*/
@@ -132,16 +202,6 @@ button:hover {
     background-color: black;
 }
 
-
-
-@media only screen and (max-width: 991px) {
-    body {
-        background-color: #aaa;
-    }
-    h1 {
-        color: blue;
-    }
-} 
 
  /* Footer styling */
  footer {

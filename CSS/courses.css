@@ -1,275 +1,178 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-    --main-color: #F0F0F1;
-    --nav-bg-color: rgba(3, 3, 3, 0.5);
-    --nav-link-color: #f2f2f2;
-    --nav-link-hover-bg-color: #ddd;
-    --title-color: #fff;
-    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+  --main-color: #F0F0F1;
+  --nav-bg-color: rgba(3, 3, 3, 0.5);
+  --nav-link-color: #f2f2f2;
+  --nav-link-hover-bg-color: #ddd;
+  --title-color: #fff;
+  --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
 }
-
-
 
 
 /*Page 1 logo undsen logo*/
-
 .logo {
-    display: inline-block;
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-    padding-left: 40%;
+display: inline-block;
+margin: 0 auto;
+height: 75px;
 }
 
 
-/*facebook logo*/
-
-.icon {
-    float: right;
-    padding-top: 8px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    top: 10px;
-    right: 10px;
-}
-
-
-/*instagram logo*/
-
-.icon1 {
-    float: right;
-    position: relative;
-    padding-top: 8px;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-    right: 8px;
-}
-
-
-/*Youtube logo*/
-
-.icon2 {
-    float: right;
-    position: relative;
-    padding-right: 30px;
-    padding-top: 8px;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-}
-
+/*social media icon*/
+.icons {
+width: 30px;
+height: 30px;
+float: right;
+display: flex;
+align-items: center;  
+padding: 5px;  
+} 
 
 /*icons mouse event scale */
-
-.icon:hover, .icon1:hover, .icon2:hover {
-    transform: scale(1.2);
+.icons:hover{
+transform: scale(1.2);
 }
 
-body {
-    background-repeat: no-repeat, repeat;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    background-image: url(logInlogo.png);
-    background-size: 60%;
-    background-color: var(--main-color);
-    width: 100%;
-}
-
-
-/*Menu design*/
-
+/* Navigation */
 .topnav {
-    margin: auto;
-    width: 100%;
-    background-color: var(--nav-bg-color);
-    display: flex;
-    justify-content: center;
+margin: auto;
+width: auto;
+display: flex;
+justify-content: flex-start;
+background-color: var(--nav-bg-color);
 }
 
 .topnav a {
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 15px 50px;
-    text-decoration: none;
-    font-size: 17px;
+width: 14.28%;
+padding: 15px 50px;
+font-size: 17px;
+text-align: center;
+text-decoration: none;
+color: var(--nav-link-color);
 }
-
-
-/*Menu design mouse event*/
 
 .topnav a:hover {
-    background-color: var(--nav-link-hover-bg-color);
-    color: black;
+background-color: var(--nav-link-hover-bg-color);
+color: #333;
+}
+
+.active {
+color: #333;
+}
+
+.sidenav {
+width: 100%;
+height: 0;
+position: fixed;
+top: 60px;
+left: 0;
+background-color: #333;
+overflow-x: hidden;
+transition: 0.5s;
+display: none;
+}
+
+.sidenav a {
+padding: 10px;
+text-decoration: none;
+display: block;
+color: #fff;
+}
+
+.sidenav a:hover {
+background-color: #fff;
+color: #333;
+}
+
+.closebtn {
+position: absolute;
+top: 0;
+right: 10px;
+font-size: 36px;
+margin-left: 50px;
+color: #fff;
+cursor: pointer;
+}
+
+.icon {
+display: none;
+color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+.topnav a:not(:first-child) {
+display: none;
+}
+.topnav a.icon {
+float: right;
+display: block;
+}
+}
+
+@media screen and (max-width: 768px) {
+.topnav.responsive {
+position: relative;
+}
+.topnav.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+display: block;
+text-align: center;
+}
+.sidenav {
+width: 100%;
+height: auto;
+top: 60px;
+display: block;
+}
 }
 
 
+/*Section class about us design*/
 
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+section {
+  position: relative;
+  padding: 120px;
+  border-bottom: 1px solid #ccc;
 }
-
-
-
 
 button {
-    position: static;
-    margin: 20px;
-    float: left;
-    padding: 10px 20px;
-    background-color: var(--nav-bg-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: black;
-}
-
-
-/* Style the label */
-
-english-course-chooser {
-    padding: 20%;
-}
-english-course-chooser label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the select dropdown */
-  english-course-chooser select {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 3px #ddd;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the submit button */
-  english-course-chooser button {
-    background-color: var(--nav-bg-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Style the submit button on hover */
-  english-course-chooser button:hover {
-    background-color: black;
-  }
-  
-  /* Style the form */
-  english-course-chooser form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
- 
-  
-  h2,h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 18px;
-    font-weight: bolder;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-weight: 500;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  li {
-    font-size: 16px;
-    margin-bottom: 5px;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  
-
-/* Footer section */
-footer {
-  position: fixed;
-  width: 100%;
-  bottom:0;
-  background-color: #282B32;
+  position: static;
+  margin: 20px;
+  float: left;
+  padding: 10px 20px;
+  background-color: var(--nav-bg-color);
   color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-  font-family: Arial, sans-serif;
-  border-top: 1px solid #fff; 
-}
-
-
-/* Zuun footer */
-.footer-left {
-  flex-basis: 50%;
-  text-align: left;
-}
-
-/* Baruun footer */
-.footer-right {
-  flex-basis: 50%;
-  text-align: right;
-}
-
-/* Social media icons */
-.footer-icon {
-  width: 40px;
-  margin: 0 10px;
-}
-
-.footer-icon:hover {
-  opacity: 0.7;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-left,
-  .footer-right {
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+button:hover {
+  background-color: black;
+}
+
+
+/* Footer styling */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
 }

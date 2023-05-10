@@ -12,7 +12,6 @@
 
     <title>Courses</title>
     <link rel="stylesheet" href="CSS/courses.css">
-      
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
     </style>
@@ -27,59 +26,77 @@
         <a href="login.html"><button type="submit">Нэвтрэх</button></a>
 
         <nav>
-            <nav>
-                <div class="topnav">
-                  <a class="active" href="index.html">HOME</a>
-                  <a href="#aboutus">ABOUT US</a>
-                  <a href="news.html">NEWS</a>
-                  <a href="courses.html">COURSES</a>
-                  <a href="freelesson.html">FREE LESSONS</a>
-                  <a href="#test">TEST</a>
-                  <a href="#contact">CONTACT US</a>
-                  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-                </div>
-                <div class="sidenav" id="mySidenav">
-                  <a href="index.html">HOME</a>
-                  <a href="#aboutus">ABOUT US</a>
-                  <a href="news.html">NEWS</a>
-                  <a href="courses.html">COURSES</a>
-                  <a href="freelesson.html">FREE LESSONS</a>
-                  <a href="#test">TEST</a>
-                  <a href="#contact">CONTACT US</a>
-                  <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
-                </div>
-              </nav>
+            <div class="topnav">
+                <a class="active" href="index.html">HOME</a>
+                <a href="#aboutus">ABOUT US</a>
+                <a href="news.html">NEWS</a>
+                <a href="courses.html">COURSES</a>
+                <a href="freelesson.html">FREE LESSONS</a>
+                <a href="#test">TEST</a>
+                <a href="#contact">CONTACT US</a>
+            </div>
 
         </nav>
     </header>
 
-    <english-course-chooser>
+    
+
+    <!--<english-course-chooser>
         <form>
             <label for="course-select">Choose a course:</label>
             <select id="course-select">
               <option value="beginner">Beginner English</option>
               <option value="intermediate">Intermediate English</option>
               <option value="advanced">Advanced English</option>
-              <option value="ielts">IELTS</option>
+              <option value="advanced">IELTS</option>
             </select>
             <button type="submit">Enroll</button>
           </form>
-    </english-course-chooser>      
-    
-    <footer>
-      <div class="footer1">
-          <p>Copyright @2023</p>
-      </div>
-      <div class="footer2">
-          <img class="footer-icon" src="Pictures/facebook-round-svgrepo-com.svg" alt="footer-icon">
-          <img class="footer-icon" src="Pictures/instagram-round-svgrepo-com.svg" alt="footer-icon">
-          <img class="footer-icon" src="Pictures/youtube-round-svgrepo-com.svg" alt="footer-icon">
-      </div>
-      <div class="footer3">
-          <p>Designed by BAN team</p>
-      </div>
-  </footer>
-    <script src="Javascript/Courses.js"></script>
+          <slot name="header"></slot>
+        <slot name="footer"></slot>
+    </english-course-chooser>     --> 
+
+    <div class="slide-container">
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+        <span class="slider-span" id="slider-span5"></span>
+
+        <div class="image-slider">
+            <div class="slides-div" id="slide-1">
+                <img src="Pictures/course-img.png" alt="" class="img" id="img1">
+                <a href="#slider-span1" class="button" id="button-1"></a>
+            </div>
+            <div class="slides-div" id="slide-2">
+                <img src="Pictures/course-img.png" alt="" class="img" id="img2">
+                <a href="#slider-span2" class="button" id="button-2"></a>
+            </div>
+            <div class="slides-div" id="slide-3">
+                <img src="Pictures/course-img.png" alt="" class="img" id="img3">
+                <a href="#slider-span3" class="button" id="button-3"></a>
+            </div>
+            <div class="slides-div" id="slide-4">
+                <img src="Pictures/course-img.png" alt="" class="img" id="img4">
+                <a href="#slider-span4" class="button" id="button-4"></a>
+            </div>
+            <div class="slides-div" id="slide-5">
+                <img src="Pictures/course-img.png" alt="" class="img" id="img5">
+                <a href="#slider-span5" class="button" id="button-5"></a>
+            </div>
+        </div>
+    </div>
+
 </body>
+<footer>
+    <address>
+        <p>Author:  BAN</p>
+        <a href="ban@example.com">ban@example.com</a>
+        <p>Утас: 99661881</p>
+    </address>
+
+</footer>
+
+<script src="Courses.js"></script>
 
 </html>

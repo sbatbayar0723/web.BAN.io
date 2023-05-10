@@ -13,169 +13,152 @@
 }
 
 
-/*Page 1 logo undsem logo*/
-
+/*Page 1 logo undsen logo*/
 .logo {
-    display: inline-block;
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-    padding-left: 515px;
+  display: inline-block;
+  margin: 0 auto;
+  height: 75px;
 }
 
 
-/*facebook logo*/
-
-.icon {
-    float: right;
-    padding-top: 8px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    top: 10px;
-    right: 10px;
-}
-
-
-/*instagram logo*/
-
-.icon1 {
-    float: right;
-    position: relative;
-    padding-top: 8px;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-    right: 8px;
-}
-
-
-/*Youtube logo*/
-
-.icon2 {
-    float: right;
-    position: relative;
-    padding-right: 30px;
-    padding-top: 8px;
-    width: 30px;
-    height: 30px;
-    top: 15px;
-}
-
+/*social media icon*/
+.icons {
+  width: 30px;
+  height: 30px;
+  float: right;
+  display: flex;
+  align-items: center;  
+  padding: 5px;  
+} 
 
 /*icons mouse event scale */
-
-.icon:hover,.icon1:hover,.icon2:hover {
-    transform: scale(1.2);
+.icons:hover{
+  transform: scale(1.2);
 }
-
-
-body {
-    background-repeat: no-repeat, repeat;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    background-image: url(logInlogo.png);
-    background-size: 80%;
-    background-color: var(--main-color);
-    width: 100%;
-}
-
 
 /* Navigation */
 .topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--nav-bg-color);
-    color: #fff;
-    padding-left: 50px;
+  margin: auto;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--nav-bg-color);
+}
+
+.topnav a {
+  width: 14.28%;
+  padding: 15px 50px;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+.topnav a:hover {
+background-color: var(--nav-link-hover-bg-color);
+color: #333;
+}
+
+.active {
+color: #333;
+}
+
+.sidenav {
+width: 100%;
+height: 0;
+position: fixed;
+top: 60px;
+left: 0;
+background-color: #333;
+overflow-x: hidden;
+transition: 0.5s;
+display: none;
+}
+
+.sidenav a {
+padding: 10px;
+text-decoration: none;
+display: block;
+color: #fff;
+}
+
+.sidenav a:hover {
+background-color: #fff;
+color: #333;
+}
+
+.closebtn {
+position: absolute;
+top: 0;
+right: 10px;
+font-size: 36px;
+margin-left: 50px;
+color: #fff;
+cursor: pointer;
+}
+
+.icon {
+display: none;
+color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+.topnav a:not(:first-child) {
+  display: none;
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 768px) {
+.topnav.responsive {
+  position: relative;
+}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  display: block;
+  text-align: center;
+}
+.sidenav {
+  width: 100%;
+  height: auto;
+  top: 60px;
+  display: block;
+}
+}
+/* Free lessons design */
+.box {
+  justify-content: center; 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.freelesson{
+  /* text-align: center; */
+   /* font-size: 30px; */
   }
-  
-  .topnav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: var(--nav-link-color);
-  }
-  
-  .topnav a:hover {
-    background-color: var(--nav-link-hover-bg-color);
-    color: #333;
-  }
-  
-  .active {
-    color: #333;
-  }
-  
-  .sidenav {
-    width: 100%;
-    height: 0;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.5s;
-    display: none;
-  }
-  
-  .sidenav a {
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    color: #fff;
-  }
-  
-  .sidenav a:hover {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .closebtn {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .icon {
-    display: none;
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {
-      display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .topnav.responsive {
-      position: relative;
-    }
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      display: block;
-      text-align: center;
-    }
-    .sidenav {
-      width: 100%;
-      height: auto;
-      top: 60px;
-      display: block;
-    }
-  }
+
 
 
 /*Section class about us design*/
@@ -203,55 +186,21 @@ button:hover {
 }
 
 
- /* Footer section */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #282B32;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-  font-family: Arial, sans-serif;
-  border-top: 1px solid #fff; /* Add a white line to the top of the footer */
-}
-
-
-/* Left side of footer */
-.footer-left {
-  flex-basis: 50%;
-  text-align: left;
-}
-
-/* Right side of footer */
-.footer-right {
-  flex-basis: 50%;
-  text-align: right;
-}
-
-/* Social media icons */
-.footer-icon {
-  width: 40px;
-  margin: 0 10px;
-}
-
-.footer-icon:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-left,
-  .footer-right {
-    flex-basis: 100%;
+ /* Footer styling */
+ footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
-}
+  
+  footer p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  

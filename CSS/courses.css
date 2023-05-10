@@ -138,10 +138,7 @@ body {
 
 
 
-
-
 /*Page 1 logo undsen logo*/
-
 .logo {
   display: inline-block;
   margin: 0 auto;
@@ -216,9 +213,6 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
-
-/*Menu design mouse event*/
 
 .topnav a:hover {
   background-color: var(--nav-link-hover-bg-color);

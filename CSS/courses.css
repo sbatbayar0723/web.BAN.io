@@ -204,6 +204,7 @@ body {
   background-color: var(--nav-bg-color);
   display: flex;
   justify-content: center;
+  padding-bottom: 500px;
 }
 
 .topnav a {

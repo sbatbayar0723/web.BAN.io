@@ -1,4 +1,4 @@
-// get the form and select element
+/*// get the form and select element
 const form = document.querySelector('form');
 const select = form.querySelector('select');
 
@@ -68,4 +68,38 @@ function closeNav() {
   }
   }
   
-  window.addEventListener("resize", resizeNav);
+  window.addEventListener("resize", resizeNav);*/
+
+ // Get references to the elements
+const courseInfo = document.querySelectorAll('.course-info');
+const courseTitle = document.querySelector('#course-title');
+const courseDescription = document.querySelector('#course-description');
+const coursePrice = document.querySelector('#course-price');
+
+// Loop through each button and add an event listener
+const buttons = document.querySelectorAll('.button');
+buttons.forEach(function(button, index) {
+  button.addEventListener('click', function() {
+    // Hide all the course info elements
+    courseInfo.forEach(function(info) {
+      info.style.display = 'none';
+    });
+    // Show the course info for the corresponding button
+    const courseId = 'course-info-' + (index + 1);
+    const course = document.querySelector(`#${courseId}`);
+    course.style.display = 'block';
+    // Update the course details in the course info section
+    const courseTitleText = course.querySelector('h2').textContent;
+    const courseDescriptionText = course.querySelector('p').textContent;
+    const coursePriceText = '$99'; // Replace this with your actual logic to calculate the course price
+    courseTitle.textContent = courseTitleText;
+    courseDescription.textContent = courseDescriptionText;
+    coursePrice.textContent = coursePriceText;
+  });
+});
+
+
+
+
+
+

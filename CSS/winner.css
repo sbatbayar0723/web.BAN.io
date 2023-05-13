@@ -1,3 +1,4 @@
+/*Бүх элементүүдэд*/
 * {
   margin: 0px;
   padding: 0px;
@@ -22,14 +23,14 @@ header {
   padding-bottom: 700px;
 }
 
-/*Page 1 logo undsen logo*/
+/*Үндсэн лого*/
 .logo {
   display: inline-block;
   margin: 0 auto;
   height: 75px;
 }
 
-/*social media icon*/
+/*Сошиал медиа icon*/
 .icons {
   width: 30px;
   height: 30px;
@@ -40,9 +41,9 @@ header {
   opacity: 80%;
 } 
 
-/*icons mouse event scale */
+/*Icons mouse event scale*/
 .icons:hover{
-  transform: scale(1.2);
+  transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/
 }
 
 /* Body Background */

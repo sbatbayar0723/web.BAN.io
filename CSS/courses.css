@@ -133,108 +133,75 @@ body {
 
 
 
-
-
-
-
-
 /*Page 1 logo undsen logo*/
 .logo {
   display: inline-block;
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  padding-left: 40%;
+  height: 75px;
 }
 
-
-/*facebook logo*/
-
-.icon {
-  float: right;
-  padding-top: 8px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  top: 10px;
-  right: 10px;
-}
-
-
-/*instagram logo*/
-
-.icon1 {
-  float: right;
-  position: relative;
-  padding-top: 8px;
+/*social media icon*/
+.icons {
   width: 30px;
   height: 30px;
-  top: 15px;
-  right: 8px;
-}
-
-
-/*Youtube logo*/
-
-.icon2 {
   float: right;
-  position: relative;
-  padding-right: 30px;
-  padding-top: 8px;
-  width: 30px;
-  height: 30px;
-  top: 15px;
-}
-
+  display: flex;
+  align-items: center;  
+  padding: 5px;  
+} 
 
 /*icons mouse event scale */
-
-.icon:hover, .icon1:hover, .icon2:hover {
+.icons:hover{
   transform: scale(1.2);
 }
 
-
-
-
-/*Menu design*/
-
-.topnav {
-  margin: auto;
+/* Body Background */
+body {
   width: 100%;
-  background-color: var(--nav-bg-color);
-  display: flex;
-  justify-content: center;
-  padding-bottom: 500px;
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  background-repeat: no-repeat, repeat;
+  background-color: var(--main-color);
 }
 
-.topnav a {
-  color: var(--nav-link-color);
-  text-align: center;
-  padding: 15px 50px;
-  text-decoration: none;
-  font-size: 17px;
+/* Navigation */
+
+
+
+.menu  {
+  list-style-type: none;
+  overflow: hidden;
+  margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg-color);
+    padding: 10px;
 }
 
-.topnav a:hover {
-  background-color: var(--nav-link-hover-bg-color);
-  color: black;
+.menu li {
+   float: left;
 }
 
-
-button {
-  position: static;
-  margin: 20px;
-  float: left;
-  padding: 10px 20px;
-  background-color: var(--nav-bg-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.menu li a {
+  width: auto;
+    padding: 15px 60px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
 }
 
-button:hover {
-  background-color: black;
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.menu li a.active {
+  float: right;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 
@@ -252,65 +219,30 @@ button:hover {
 
 
 
-/*
-english-course-chooser {
-  padding: 20%;
-}
-english-course-chooser label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-
-english-course-chooser select {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px #ddd;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 10px;
-}
-
-
-english-course-chooser button {
-  background-color: var(--nav-bg-color);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-english-course-chooser button:hover {
-  background-color: black;
-}
-
-
-english-course-chooser form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
 /* Footer styling */
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
+.footer1{
+  display: flex;
+}
+
+.footer3{
+  display: inline-flex;
+  float: right;
+}
+
 footer p {
   margin: 0;
   font-size: 1.2rem;
 }
+
+.footer-icon{
+  width: 40px;
+  height: 40px;
+}
+

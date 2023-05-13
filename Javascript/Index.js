@@ -9,16 +9,18 @@ fetch('index.json')
     console.error('Error:', error);
   });
 
- const aboutUsLink = document.querySelector('a[href="#aboutus"]');
+// select the "ABOUT US" link in the navigation menu
+const aboutUsLink = document.querySelector('a[href="#aboutUs"]');
 
- const aboutUsSection = document.querySelector('.aboutUs');
-
- aboutUsLink.addEventListener('click', function(event) {
+// add a click event listener to the "ABOUT US" link
+aboutUsLink.addEventListener('click', function(event) {
+  event.preventDefault(); // prevent the default link behavior (i.e., navigating to a new page)
   
-   event.preventDefault();
+  // scroll to the "ABOUT US" section
+  const aboutUsSection = document.querySelector('.aboutUs');
+  aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+});
 
-   aboutUsSection.scrollIntoView({ behavior: 'smooth' });
- });
 
 // Get the Contact Us link in the navigation menu
 var contactLink = document.getElementById("contact-link");

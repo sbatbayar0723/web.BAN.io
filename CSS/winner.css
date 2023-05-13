@@ -1,18 +1,20 @@
+/*Бүх элементүүдэд*/
 * {
   margin: 0px;
   padding: 0px;
 }
 
+/*Custom property*/
 :root {
-  --main-color: #F0F0F1;
-  --nav-bg-color: rgba(3, 3, 3, 0.5);
-  --nav-link-color: #f2f2f2;
-  --nav-link-hover-bg-color: #ddd;
-  --title-color: #fff;
-  --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+  --main-color: #F0F0F1; /*Үндсэн өнгө*/
+  --nav-bg-color: rgba(3, 3, 3, 0.5); /*Навигац дэвсгэр өнгө*/
+  --nav-link-color: #f2f2f2; /*Навигац холбоосын өнгө*/
+  --nav-link-hover-bg-color: #ddd; /*Навигац холбоосын дэвсгэр өнгө*/
+  --title-color: #fff; /*Гарчгийн өнгө*/
+  --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9); /*Гарчгийн сүүдэр*/
 }
 
-/*Page1 background*/
+/*Нүүр хуудас*/
 header {
   background-image: url('page1background.jpg');
   background-size: cover;
@@ -39,7 +41,7 @@ body {
   height: 75px;
 }
 
-/*social media icon*/
+/*Сошиал медиа icon*/
 .icons {
   width: 30px;
   height: 30px;
@@ -49,9 +51,9 @@ body {
   padding: 5px;  
 } 
 
-/*icons mouse event scale */
+/*Icons mouse event scale*/
 .icons:hover{
-  transform: scale(1.2);
+  transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/
 }
 
 /*Button*/

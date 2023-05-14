@@ -348,12 +348,12 @@ h3.OurEnglishCourse + p {
 width:98%;
 height:100%;
 display:grid;
-margin: 20px 350px;
+margin: 40px 150px;
 justify-content: center;
 background-color:#fff;
 grid-template-columns: auto auto;
-grid-column-gap: 40px;
-grid-row-gap: 40px;
+grid-column-gap: 60px;
+grid-row-gap: 70px;
 
 } 
 /* 4 Content-n mouse event color design */

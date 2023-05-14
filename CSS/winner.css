@@ -217,22 +217,22 @@ h1{
 
 /*About us section*/
 .aboutUs {
-padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-background-color: beige;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: beige;
 }
 
 .aboutUs h2 {
-font-size: 36px;
-margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .aboutUs p {
-font-size: 18px;
-line-height: 1.5;
-margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .aboutUs img {
@@ -249,6 +249,7 @@ background-color: white;
 
 /*Team member section*/
 .team {
+  margin-top: 3px;
   padding: 50px;
   position: relative;
   text-align: center;
@@ -442,7 +443,7 @@ box-shadow: 1px 5px 30px -16px black;
   color: #444;
   font-size: 20px;
 }
-.telephone{
+.telephone {
   background-color: white;
   border-radius: 30%;
   width:40px;
@@ -452,27 +453,32 @@ box-shadow: 1px 5px 30px -16px black;
 
 /* Footer styling */
 footer {
-  background-color: #333;
+  margin-top: 3px;
+  background-color: #282B32;
   color: #fff;
   padding: 20px;
-  text-align: center;
-}
-
-.footer1{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer3{
-  display: inline-flex;
-  float: right;
+.footer1 {
+  margin-left: 100px;
+}
+
+.footer2 {
+  margin-right: 100px;
 }
 
 footer p {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
-.footer-icon{
+.footer-icon {
+  margin-left: 5px;
+  margin-right: 5px;
   width: 40px;
   height: 40px;
 }

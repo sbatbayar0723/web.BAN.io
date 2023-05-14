@@ -20,7 +20,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: var(--main-color);
+  background-color: var(--main-color); /*Custom property ашиглах*/
   padding-bottom: 700px;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 
-/*Page 1 logo undsen logo*/
+/*Үндсэн лого*/
 .logo {
   display: inline-block;
   margin: 0 auto;
@@ -74,12 +74,8 @@ body {
   background-color: black;
 }
 
-
-/* Navigation */
-
-
-
-.menu  {
+/*Menu*/
+.menu {
   list-style-type: none;
   overflow: hidden;
   margin: auto;
@@ -103,6 +99,7 @@ body {
     color: var(--nav-link-color);
 }
 
+/*Menu - тус бүр дээр хулгана очиход*/
 .menu li a:hover:not(.active) {
   background-color: #111;
 }
@@ -264,9 +261,6 @@ li a:hover:not(.active) {
 
 /*Winner's course text design*/
 
-=======
-/*Winner's course text design*/
->>>>>>> Stashed changes
 h1{
   top: 10%;
   left: 50%;
@@ -285,6 +279,7 @@ h1{
   font-weight: lighter;
 }
 
+/*Үдсэн нүүр дээрх Winner's course текст анимейшн*/
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -295,7 +290,6 @@ h1{
 }
 
 /*About us section*/
-
 .aboutUs {
 padding: 0;
 display: flex;
@@ -327,14 +321,13 @@ justify-content: center;
 background-color: white;
 }
 
-/* team member section */
-
+/*Team member section*/
 .team {
   padding: 50px;
   position: relative;
   text-align: center;
   border-bottom: 1px solid #ccc;
-  background-color:azure;
+  background-color:#282B32;
 }
 
 .team .titlee {
@@ -374,7 +367,6 @@ background-color: white;
 }
 
 /*Why our courses Section*/
-
 .OurCourse{
 padding: 30px 0px;
 display: flex;
@@ -400,13 +392,12 @@ text-align: center;
   color: rgb(255, 201, 86);
   
 }
-/* 4 icon image mouse event color design */
+/*4 icon image mouse event color design */
 .content1:hover .material-symbols-outlined{
   color: white;
 }
 
 /* 4 sub title design  */
-
 .OurEnglishCourse{
   font-family: "Roboto slab", "sans-serif";
   font-size: 26px;
@@ -418,7 +409,6 @@ text-align: center;
 }
 /* 4 sub title text design */
 h3.OurEnglishCourse + p {
-  font-family: "Open sans";
   font-size: 16px;
   line-height: 1.5em;
   margin: 16px 0px;
@@ -427,17 +417,17 @@ h3.OurEnglishCourse + p {
   margin-right: 30px;
 }
 
-/* 4 content-n negtgesn div tag */
+/*4 content-n negtgesn div tag */
 .container{
 width:98%;
 height:100%;
 display:grid;
-margin: 20px 350px;
+margin: 40px 150px;
 justify-content: center;
 background-color:#fff;
 grid-template-columns: auto auto;
-grid-column-gap: 40px;
-grid-row-gap: 40px;
+grid-column-gap: 60px;
+grid-row-gap: 70px;
 
 } 
 /* 4 Content-n mouse event color design */

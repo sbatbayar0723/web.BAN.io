@@ -247,8 +247,7 @@ justify-content: center;
 background-color: white;
 }
 
-/* team member section */
-
+/*Team member section*/
 .team {
   padding: 50px;
   position: relative;
@@ -294,7 +293,6 @@ background-color: white;
 }
 
 /*Why our courses Section*/
-
 .OurCourse{
 padding: 30px 0px;
 display: flex;
@@ -320,13 +318,12 @@ text-align: center;
   color: rgb(255, 201, 86);
   
 }
-/* 4 icon image mouse event color design */
+/*4 icon image mouse event color design */
 .content1:hover .material-symbols-outlined{
   color: white;
 }
 
 /* 4 sub title design  */
-
 .OurEnglishCourse{
   font-family: "Roboto slab", "sans-serif";
   font-size: 26px;
@@ -338,7 +335,6 @@ text-align: center;
 }
 /* 4 sub title text design */
 h3.OurEnglishCourse + p {
-  font-family: "Open sans";
   font-size: 16px;
   line-height: 1.5em;
   margin: 16px 0px;
@@ -347,7 +343,7 @@ h3.OurEnglishCourse + p {
   margin-right: 30px;
 }
 
-/* 4 content-n negtgesn div tag */
+/*4 content-n negtgesn div tag */
 .container{
 width:98%;
 height:100%;

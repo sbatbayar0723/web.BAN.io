@@ -20,7 +20,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: var(--main-color);
+  background-color: var(--main-color); /*Custom property ашиглах*/
   padding-bottom: 700px;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 
-/*Page 1 logo undsen logo*/
+/*Үндсэн лого*/
 .logo {
   display: inline-block;
   margin: 0 auto;
@@ -74,12 +74,8 @@ body {
   background-color: black;
 }
 
-
-/* Navigation */
-
-
-
-.menu  {
+/*Menu*/
+.menu {
   list-style-type: none;
   overflow: hidden;
   margin: auto;
@@ -103,6 +99,7 @@ body {
     color: var(--nav-link-color);
 }
 
+/*Menu - тус бүр дээр хулгана очиход*/
 .menu li a:hover:not(.active) {
   background-color: #111;
 }
@@ -189,8 +186,7 @@ body {
 }
 */
 
-/*Winner's course text design*/
-
+/*Үдсэн нүүр дээрх Winner's course текст дизайн*/
 h1{
   top: 10%;
   left: 50%;
@@ -209,6 +205,7 @@ h1{
   font-weight: lighter;
 }
 
+/*Үдсэн нүүр дээрх Winner's course текст анимейшн*/
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -219,7 +216,6 @@ h1{
 }
 
 /*About us section*/
-
 .aboutUs {
 padding: 0;
 display: flex;

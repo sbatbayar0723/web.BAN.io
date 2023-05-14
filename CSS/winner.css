@@ -114,6 +114,78 @@ body {
 .active {
   background-color: #4CAF50;
 }
+/*end duussan*/
+/*shine design endees ehelsen*/
+/* ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+   float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+} */
+
+.menu  {
+  /* list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; */
+  list-style-type: none;
+  overflow: hidden;
+  margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--nav-bg-color);
+}
+
+.menu li {
+   float: left;
+}
+
+.menu li a {
+  width: auto;
+    padding: 15px 60px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.menu li a.active {
+  float: right;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*shine design*/
+
 
 /*shine design
 
@@ -187,10 +259,14 @@ body {
     display: block;
   }
 }
+<<<<<<< Updated upstream
 */
 
 /*Winner's course text design*/
 
+=======
+/*Winner's course text design*/
+>>>>>>> Stashed changes
 h1{
   top: 10%;
   left: 50%;
@@ -380,6 +456,26 @@ box-shadow: 1px 5px 30px -16px black;
 
 
 
+<<<<<<< Updated upstream
+=======
+/*Button*/
+.button-link {
+  position: static;
+  margin: 20px;
+  float: left;
+  padding: 10px 20px;
+  background-color: var(--nav-bg-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: black;
+}
+
+>>>>>>> Stashed changes
 
 /*CONTACT INFO*/
 .contact-section {

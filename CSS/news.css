@@ -14,6 +14,7 @@
 }
 
 
+<<<<<<< Updated upstream
 /*Үндсэн лого*/
 .logo {
 display: inline-block;
@@ -23,6 +24,17 @@ height: 75px;
 
 
 /*Сошиал медиа icon*/
+=======
+/*Page 1 logo undsen logo*/
+.logo {
+display: inline-block;
+margin: 0 auto;
+height: 75px;
+}
+
+
+/*social media icon*/
+>>>>>>> Stashed changes
 .icons {
 width: 30px;
 height: 30px;
@@ -32,9 +44,15 @@ align-items: center;
 padding: 5px;  
 } 
 
+<<<<<<< Updated upstream
 /*Icons mouse event scale*/
 .icons:hover{
 transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/
+=======
+/*icons mouse event scale */
+.icons:hover{
+transform: scale(1.2);
+>>>>>>> Stashed changes
 }
 
 /* Navigation */

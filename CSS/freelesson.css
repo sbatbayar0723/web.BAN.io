@@ -1,221 +1,206 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-    --main-color: #F0F0F1;
-    --nav-bg-color: rgba(3, 3, 3, 0.5);
-    --nav-link-color: #f2f2f2;
-    --nav-link-hover-bg-color: #ddd;
-    --title-color: #fff;
-    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+  --main-color: #F0F0F1;
+  --nav-bg-color: rgba(3, 3, 3, 0.5);
+  --nav-link-color: #f2f2f2;
+  --nav-link-hover-bg-color: #ddd;
+  --title-color: #fff;
+  --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
+}
+/* Body Background */
+body {
+width: 100%;
+position: absolute;
+font-family: 'Inter', sans-serif;
+background-image: url(logInlogo.png);
+background-size: 60%;
+background-repeat: no-repeat, repeat;
+background-color: var(--main-color);
 }
 
 
 /*Page 1 logo undsen logo*/
 .logo {
-  display: inline-block;
-  margin: 0 auto;
-  height: 75px;
+display: inline-block;
+margin: 0 auto;
+height: 75px;
 }
 
 
 /*social media icon*/
 .icons {
-  width: 30px;
-  height: 30px;
-  float: right;
-  display: flex;
-  align-items: center;  
-  padding: 5px;  
+width: 30px;
+height: 30px;
+float: right;
+display: flex;
+align-items: center;  
+padding: 5px;  
 } 
 
 /*icons mouse event scale */
 .icons:hover{
-  transform: scale(1.2);
+transform: scale(1.2);
 }
 
-/* Navigation */
-.topnav {
-  margin: auto;
-  width: auto;
-  display: flex;
-  justify-content: flex-start;
-  background-color: var(--nav-bg-color);
-}
-
-.topnav a {
-  width: 14.28%;
-  padding: 15px 50px;
-  font-size: 17px;
-  text-align: center;
-  text-decoration: none;
-  color: var(--nav-link-color);
-}
-
-.topnav a:hover {
-background-color: var(--nav-link-hover-bg-color);
-color: #333;
-}
-
-.active {
-color: #333;
-}
-
-.sidenav {
+/*Menu*/
+.menu {
+margin: 0;
+padding: 0;
 width: 100%;
-height: 0;
-position: fixed;
-top: 60px;
-left: 0;
-background-color: #333;
-overflow-x: hidden;
-transition: 0.5s;
-display: none;
+display: flex;
+overflow: hidden;
+flex-wrap: wrap;
+list-style-type: none;
+justify-content: space-between;
+background-color: var(--nav-bg-color);
 }
 
-.sidenav a {
-padding: 10px;
-text-decoration: none;
+.menu li {
+float: left; 
+flex-grow: 1;
+}
+
+.menu li a {
+padding: 14px 16px;
 display: block;
-color: #fff;
+color: white;
+text-align: center;
+text-decoration: none;
 }
 
-.sidenav a:hover {
-background-color: #fff;
-color: #333;
+.menu li a:hover {
+color: white;
+background-color: #111;
 }
 
-.closebtn {
-position: absolute;
-top: 0;
-right: 10px;
-font-size: 36px;
-margin-left: 50px;
-color: #fff;
-cursor: pointer;
-}
-
-.icon {
+.menu li.icon {
+flex-grow: 0;
 display: none;
-color: #fff;
+margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
-.topnav a:not(:first-child) {
+@media screen and (max-width: 750px) {
+.menu li:not(:first-child) {
   display: none;
 }
-.topnav a.icon {
+.menu li:first-child {
+  text-align: right;
+}
+
+.menu li.icon {
   float: right;
   display: block;
 }
+
+.menu.responsive {
+  position: relative;
+  text-align: right;
 }
 
-@media screen and (max-width: 768px) {
-.topnav.responsive {
-  position: relative;
-}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
+.menu.responsive li.icon {
   top: 0;
+  right: 0;
+  position: absolute;
 }
-.topnav.responsive a {
+
+.menu.responsive li {
+  float: none;
   display: block;
-  text-align: center;
+  text-align: right;
 }
-.sidenav {
-  width: 100%;
-  height: auto;
-  top: 60px;
-  display: block;
+.menu.responsive li a {
+  width: 100%; 
+  padding: 10px; 
+  display: block; 
+  text-align: right;
 }
+}
+h2 {
+color: #111;
+padding: 50px 0px 0px 100px;
+text-align: center;
 }
 /* Free lessons design */
 .box {
-  justify-content: center; 
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 50px;
+justify-content: center; 
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 50px;
+}
+.box h3 {
+  text-align: center;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  margin: 20px;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+margin: 20px;
 }
 
-.freelesson{
-  /* text-align: center; */
-   /* font-size: 30px; */
-  }
-
-
-
-/*Section class about us design*/
 
 section {
-    position: relative;
-    padding: 120px;
-    border-bottom: 1px solid #ccc;
+  position: relative;
+  padding: 120px;
+  border-bottom: 1px solid #ccc;
 }
 
 button {
-    position: static;
-    margin: 20px;
-    float: left;
-    padding: 10px 20px;
-    background-color: var(--nav-bg-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  position: static;
+  margin: 20px;
+  float: left;
+  padding: 10px 20px;
+  background-color: var(--nav-bg-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: black;
+  background-color: black;
 }
 
 
- /* Footer styling */
- footer {
-  margin-top: 3px;
-  background-color: #282B32;
-  color: #fff;
-  padding: 20px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Footer styling */
+footer {
+margin-top: 3px;
+background-color: #282B32;
+color: #fff;
+padding: 20px;
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .footer1 {
-  margin-left: 100px;
+margin-left: 100px;
 }
 
 .footer2 {
-  margin-right: 100px;
+margin-right: 100px;
 }
 
 footer p {
-  margin: 0;
-  font-size: 18px;
+margin: 0;
+font-size: 18px;
 }
 
 .footer-icon {
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 45px;
-  height: 45px;
+margin-left: 5px;
+margin-right: 5px;
+width: 45px;
+height: 45px;
 }
-
-  

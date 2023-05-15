@@ -42,26 +42,13 @@ contactLink.addEventListener("click", function(event) {
 });
 
 
-
- function toggleNav() {
-  var x = document.getElementById("mySidenav");
-  if (x.style.height === "auto") {
-   
-    x.style.height = "0";
+function toggleNav() {
+  var menu = document.getElementById("myMenu");
+  if (menu.classList.contains("responsive")) {
+    menu.classList.remove("responsive");
   } else {
-  x.style.height = "auto";
+    menu.classList.add("responsive");
   }
-  }
+}
   
-  function closeNav() {
-  document.getElementById("mySidenav").style.height = "0";
-  }
   
-  function resizeNav() {
-  if (window.innerWidth > 768) {
-  document.getElementsByClassName("topnav")[0].classList.remove("responsive");
-  document.getElementById("mySidenav").style.height = "0";
-  }
-  }
-  
-  window.addEventListener("resize", resizeNav);

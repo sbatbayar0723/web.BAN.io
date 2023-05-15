@@ -36,19 +36,19 @@ body {
 
 /*Үндсэн лого*/
 .logo {
-  display: inline-block;
-  margin: 0 auto;
   height: 75px;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 /*Сошиал медиа icon*/
 .icons {
   width: 30px;
   height: 30px;
+  padding: 5px;
   float: right;
   display: flex;
-  align-items: center;  
-  padding: 5px;  
+  align-items: center;    
 } 
 
 /*Icons mouse event scale*/
@@ -58,16 +58,16 @@ body {
 
 /*Button*/
 .button-link {
-  position: static;
   margin: 20px;
-  float: left;
   padding: 10px 20px;
-  background-color: var(--nav-bg-color);
-  color: #fff;
-  border: none;
   border-radius: 5px;
+  float: left;
+  border: none;
   cursor: pointer;
+  color: #fff;
+  position: static;
   text-decoration: none;
+  background-color: var(--nav-bg-color);
 }
 
 .button-link:hover {
@@ -76,191 +76,79 @@ body {
 
 /*Menu*/
 .menu {
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
   overflow: hidden;
-  margin: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    background-color: var(--nav-bg-color);
-    padding: 10px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  background-color: var(--nav-bg-color);
 }
 
 .menu li {
-   float: left;
+  float: left; 
+  flex-grow: 1;
 }
 
 .menu li a {
-  width: auto;
-    padding: 15px 60px;
-    font-size: 17px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--nav-link-color);
-}
-
-/*Menu - тус бүр дээр хулгана очиход*/
-.menu li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.menu li a.active {
-  float: right;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-/*end duussan*/
-/*shine design endees ehelsen*/
-/* ul  {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-   float: left;
-}
-
-li a {
+  padding: 14px 16px;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.menu li a:hover {
+  color: white;
   background-color: #111;
 }
 
-.active {
-  background-color: #4CAF50;
-} */
-
-.menu  {
-  /* list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333; */
-  list-style-type: none;
-  overflow: hidden;
-  margin: auto;
-    width: auto;
-    display: flex;
-    justify-content: flex-start;
-    background-color: var(--nav-bg-color);
-}
-
-.menu li {
-   float: left;
-}
-
-.menu li a {
-  width: auto;
-    padding: 15px 60px;
-    font-size: 17px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--nav-link-color);
-}
-
-.menu li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.menu li a.active {
-  float: right;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-/*shine design*/
-
-
-/*shine design
-
-
-.sidenav {
-  width: 100%;
-  height: 0;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  background-color: #333;
-  overflow-x: hidden;
-  transition: 0.5s;
+.menu li.icon {
+  flex-grow: 0;
   display: none;
+  margin-left: auto;
 }
 
-.sidenav a {
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  color: #fff;
-}
-
-.sidenav a:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-.closebtn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.icon {
-  display: none;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .topnav a:not(:first-child) {
+@media screen and (max-width: 750px) {
+  .menu li:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  .menu li:first-child {
+    text-align: right;
+  }
+
+  .menu li.icon {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .topnav.responsive {
+  .menu.responsive {
     position: relative;
+    text-align: right;
   }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
+
+  .menu.responsive li.icon {
     top: 0;
+    right: 0;
+    position: absolute;
   }
-  .topnav.responsive a {
+
+  .menu.responsive li {
+    float: none;
     display: block;
-    text-align: center;
+    text-align: right;
   }
-  .sidenav {
-    width: 100%;
-    height: auto;
-    top: 60px;
-    display: block;
+  .menu.responsive li a {
+    width: 100%; 
+    padding: 10px; 
+    display: block; 
+    text-align: right;
   }
 }
-<<<<<<< Updated upstream
-*/
 
-/*Winner's course text design*/
-
+/*Үдсэн нүүр дээрх Winner's course текст дизайн*/
 h1{
   top: 10%;
   left: 50%;
@@ -279,7 +167,7 @@ h1{
   font-weight: lighter;
 }
 
-/*Үдсэн нүүр дээрх Winner's course текст анимейшн*/
+/*Үндсэн нүүр дээрх Winner's course текст анимейшн*/
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -333,12 +221,14 @@ background-color: white;
 .team .titlee {
   font-size: 36px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .team p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: white;
 }
 
 .team ul {
@@ -379,15 +269,15 @@ background-color: rgb(255, 255, 255);
 .OurCourse h2{
 padding: 30px;
 font-size: 50px;
-font-family: "Roboto slab", "sans-serif";
+font-family: "Helvetica";
 text-align: center;
 }
 
 /* Why our courses 4 icon image design */
 .icon-container .material-symbols-outlined {
-  font-size: 40px;
   padding: 10px;
   margin: 10px;
+  font-size: 40px;
   margin-top: 20px;
   color: rgb(255, 201, 86);
   
@@ -399,7 +289,7 @@ text-align: center;
 
 /* 4 sub title design  */
 .OurEnglishCourse{
-  font-family: "Roboto slab", "sans-serif";
+  font-family: "Helvetica";
   font-size: 26px;
   line-height: 1.3em;
   margin-left: 80px;
@@ -415,6 +305,7 @@ h3.OurEnglishCourse + p {
   margin-top: 10px;
   margin-left: 80px;
   margin-right: 30px;
+  font-family: "Helvetica";
 }
 
 /*4 content-n negtgesn div tag */
@@ -443,29 +334,6 @@ transition: 0.25s ease-in-out;
 border-left: 6px solid rgb(255, 201, 86);
 box-shadow: 1px 5px 30px -16px black;
 }
-
-
-
-<<<<<<< Updated upstream
-=======
-/*Button*/
-.button-link {
-  position: static;
-  margin: 20px;
-  float: left;
-  padding: 10px 20px;
-  background-color: var(--nav-bg-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button-link:hover {
-  background-color: black;
-}
-
->>>>>>> Stashed changes
 
 /*CONTACT INFO*/
 .contact-section {
@@ -570,6 +438,5 @@ footer p {
   width: 40px;
   height: 40px;
 }
-
 
 

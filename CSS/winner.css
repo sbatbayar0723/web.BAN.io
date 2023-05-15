@@ -179,6 +179,7 @@ h1{
 
 /*About us section*/
 .aboutUs {
+  margin-top: 3px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -198,7 +199,7 @@ h1{
 }
 
 .aboutUs img {
-width: 60%;
+width: 50%;
 }
 .aboutUs-content{
 padding: 0 20px;

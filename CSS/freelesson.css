@@ -55,32 +55,32 @@ svg:hover{
   }
   
 .menu li {
-      flex-grow: 1;
-      float: left;
+    flex-grow: 1;
+    float: left;
   }
   
 .menu li a {
-      display: block;
-      padding: 14px 16px;
-      color: white;
-      text-align: center;
-      text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
   }
   
 .menu li a:hover {
-      background-color: #111;
-      color: white;
+    background-color: #111;
+    color: white;
   }
   
 .menu li.icon {
-      display: none;
-      flex-grow: 0;
-      margin-left: auto;
+    display: none;
+    flex-grow: 0;
+    margin-left: auto;
   }
   
   /* Add styles for the menu toggle button */
 .menu-toggle {
-    display: block;
+    display: none;
     position: absolute;
     padding: 10px;
     background: none;
@@ -92,7 +92,7 @@ svg:hover{
 
   /* Show the menu when the button is clicked */
 .menu.active {
-      display: none;
+    display: none;
   }
 
 
@@ -157,13 +157,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /* or position: absolute; */;
+    bottom: 0;
+    width: 100%;
     height: 40px;
     padding: 20px;
     background-color: #282B32;
     color: #fff;
-    position: fixed; /* or position: absolute; */
-    bottom: 0;
-    width: 100%;
 }
 
 .footer1 {
@@ -188,69 +188,73 @@ footer p {
 
 @media (max-width: 767px) {
 
-    body{
+body{
         height: 100%;
         background-size: cover;
     }
 
-    .container {
-            margin: 20px;
+.container {
+        margin: 20px;
         }
     
-    .header{
-            padding-bottom: 400px;
+.header{
+        padding-bottom: 400px;
         }
       
         /* Logo */
-    .logo img {
-            width: 100%;
+.logo img {
+        width: 100%;
         }
       
         /* Navigation menu */
-    .menu {
-            display: none;
+.menu {
+        display: none;
           }
         
-    .menu.active {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+.menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
           }
         
-    .menu li {
-              flex-grow: 0;
-              width: 100%;
+.menu li {
+        flex-grow: 0;
+        width: 100%;
           }
         
-    .menu li a {
-              padding: 10px 0;
+.menu li a {
+        padding: 10px 0;
           }
         
-    .menu li.icon {
-              display: block;
+.menu li.icon {
+        display: block;
           }
+.menu-toggle{
+            display: block;
+        }
+          
 
-    .footer {
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            height: auto;
-            padding: 10px;
+.footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
           }
         
     .footer1,
-    .footer2 {
-              margin: 0;
-              padding: 0;
+.footer2 {
+        margin: 0;
+        padding: 0;
           }
         
-    footer p {
-              font-size: 14px;
+footer p {
+        font-size: 14px;
           }
         
-    footer svg {
-              width: 25px;
-              height: 25px;
+footer svg {
+        width: 25px;
+        height: 25px;
           }
 
     }

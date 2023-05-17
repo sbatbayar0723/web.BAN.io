@@ -105,7 +105,7 @@ svg:hover{
   
   /* Add styles for the menu toggle button */
 .menu-toggle {
-    display: block;
+    display: none;
     position: absolute;
     padding: 10px;
     background: none;
@@ -113,6 +113,7 @@ svg:hover{
     border: none;
     font-size: 20px;
     color: white;
+    background-color: var(--nav-bg-color);
   }
 
   /* Show the menu when the button is clicked */
@@ -231,6 +232,28 @@ to {
 .team p{
     position: relative;
 }
+
+.team img{
+    margin: 0 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team img:hover{
+    transform: scale(1.5);
+}
+
+.teamp {
+    display: inline-flex;
+  }
+  
+  .team-member {
+    margin: 0 10px;
+  }
+  
+  
+  
+
+
 
 /*Why our courses Section*/
 .OurCourse{
@@ -457,6 +480,9 @@ footer svg {
 .menu li.icon {
     display: block;
       }
+.menu-toggle{
+    display: block;
+}
   
     /* Fix for h1 in mobile */
 h1 {

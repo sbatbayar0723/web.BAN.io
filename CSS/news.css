@@ -16,12 +16,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--main-color);
-    background-image: url(logInlogo.png);
-    background-repeat: no-repeat;
     background-size: 60%;
     font-family: 'Inter', sans-serif;
 }
-
 
 
 /*Үндсэн лого*/
@@ -84,75 +81,65 @@ body {
     margin-left: auto;
 }
 
-/*@media screen and (max-width: 750px) {
-}
-.menu li:not(:first-child) {
-      display: none;
-  }
-.menu li:first-child {
-      text-align: right;
-  }
-
-.menu li.icon {
-      display: block;
-      float: right;
-  }
-
-.menu.responsive {
-      position: relative;
-      text-align: right;
-  }
-
-.menu.responsive li.icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-  }
-
-.menu.responsive li {
-      display: block;
-      float: none;
-      text-align: right;
-  }
-.menu.responsive li a {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      text-align: right;
-  }
-*/
-
-
 /*Section class about us design*/
-
-section {
+h2 {
+    margin-top: 35px;
+    color: #111;
     text-align: center;
 }
 
-.image-grid {
-    justify-items: center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 20px;
+.imagecontainer {
+    position: relative;
+    width: 80%;
+    --gap: 4px;
+	--num-cols: 4;
+	--row-height: 280px;
+
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}  
+
+.imagecontainer>img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+    filter: brightness(80%);
+    border: solid gray;
+    border-width: 0.5px;
+}  
+
+.imagecontainer>img:hover{
+    transform: scale(1.01); /*Хулгана очиход 1.02 дахин томорно*/;
+    filter: brightness(100%);
+    border-width: 0;
 }
 
-.image-grid img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 200px;
-    max-width: 100%;
-    height: 200px;
-    transition: transform 0.3s ease-in-out;
+.image-grid-col-1 {
+	grid-column: span 2;
 }
 
-.image-grid img:hover {
-    transform: scale(1.1);
+.image-grid-col-3 {
+	grid-column: span 2;
+}
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
 }
 
 
 /*button*/
-button {
+.button-link {
     position: static;
     float: left;
     margin: 20px;
@@ -162,9 +149,10 @@ button {
     border: none;
     border-radius: 5px;
     color: #fff;
+    text-decoration: none;
 }
 
-button:hover {
+.button-link:hover {
     background-color: black;
 }
 
@@ -174,9 +162,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    margin-top: auto;
-    padding: 20px;
+    height: 80px;
+    margin-top: 120px;
+    padding: 40px;
     background-color: #282B32;
     color: #fff;
 }
@@ -200,3 +188,4 @@ footer p {
     margin-right: 5px;
     margin-left: 5px;
 }
+

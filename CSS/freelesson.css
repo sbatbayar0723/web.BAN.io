@@ -11,8 +11,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--main-color);
-    background-image: url(logInlogo.png);
-    background-repeat: no-repeat, repeat;
     background-size: 60%;
     font-family: 'Inter', sans-serif;
 }
@@ -118,7 +116,7 @@ body {
 
 
 h2 {
-    padding: 50px 0px 0px 100px;
+    margin-top: 35px;
     color: #111;
     text-align: center;
 }
@@ -129,7 +127,7 @@ h2 {
     grid-template-columns: auto auto auto;
     padding: 50px;
 }
-.box h3 {
+.freelesson {
     text-align: center;
 }
 
@@ -154,7 +152,8 @@ section {
     border-bottom: 1px solid #ccc;
 }
 
-button {
+/*button*/
+.button-link {
     position: static;
     float: left;
     margin: 20px;
@@ -164,9 +163,10 @@ button {
     border: none;
     border-radius: 5px;
     color: #fff;
+    text-decoration: none;
 }
 
-button:hover {
+.button-link:hover {
     background-color: black;
 }
 
@@ -180,9 +180,9 @@ footer {
     padding: 20px;
     background-color: #282B32;
     color: #fff;
-    position: fixed; /* or position: absolute; */
-    bottom: 0;
-    width: 100%;
+    padding: 40px;
+    background-color: #282B32;
+    color: #fff;
 }
 
 .footer1 {

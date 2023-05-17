@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: var(--main-color);
+    background-color: var(--color-main);
     background-image: url(logInlogo.png);
     background-repeat: no-repeat;
     background-size: 60%;
@@ -26,7 +26,7 @@ body {
 /*Үндсэн лого*/
 .logo {
     display: inline-block;
-    height: 75px;
+    height: var(--size-logo);
     margin: 0 auto;
 }
 
@@ -36,14 +36,15 @@ svg {
     display: flex;
     align-items: center;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: var(--size-social-icon);
+    height: var(--size-social-icon);
     padding: 5px;
+    opacity: var(--opacity-icon);
 } 
 
 /*Icons mouse event scale*/
-svg:hover{
-    transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/;
+.icons:hover{
+    transform: var(--transform-svg); /*Хулгана очиход 1.2 дахин томорно*/;
 }
 
 /* Navigation */
@@ -55,7 +56,7 @@ svg:hover{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--nav-bg-color);
+    background-color: var(--color-nav-bg);
     list-style-type: none;
   }
   
@@ -67,16 +68,16 @@ svg:hover{
 .menu li a {
     display: block;
     padding: 14px 16px;
-    color: white;
+    color: var(--color-title);
     text-align: center;
     text-decoration: none;
-  }
-  
+}
+
 .menu li a:hover {
-    background-color: #111;
-    color: white;
-  }
-  
+    background-color: var(--color-nav-hover-bg);
+    color: var(--color-title);
+}
+
 .menu li.icon {
     display: none;
     flex-grow: 0;
@@ -103,7 +104,7 @@ svg:hover{
 /*Section class about us design*/
 h2 {
     margin-top: 35px;
-    color: #111;
+    color: var(--color-nav-hover-bg);
     text-align: center;
 }
 
@@ -162,16 +163,16 @@ h2 {
     float: left;
     margin: 20px;
     padding: 10px 20px;
-    background-color: var(--nav-bg-color);
+    background-color: var(--color-nav-bg);
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--color-title);
     text-decoration: none;
 }
 
 .button-link:hover {
-    background-color: black;
+    background-color: var(--color-nav-hover-bg);
 }
 
 
@@ -180,13 +181,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* or position: absolute; */;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    padding: 20px;
-    background-color: #282B32;
-    color: #fff;
+    height: 80px;
+    margin-top: 120px;
+    padding: 40px;
+    background-color: var(--color-bg-2);
+    color: var(--color-title);
 }
 
 .footer1 {
@@ -203,8 +202,8 @@ footer p {
 }
 
 .footer-icon {
-    width: 35px;
-    height: 35px;
+    width: var(--size-footer-svg);
+    height: var(--size-footer-svg);
     margin-right: 5px;
     margin-left: 5px;
 }

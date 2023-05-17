@@ -9,7 +9,7 @@
 /*Нүүр хуудас*/
 header {
     padding-bottom: 700px;
-    background-color: var(--main-color); /*Custom property ашиглах*/;
+    background-color: var(--color-main); /*Custom property ашиглах*/;
     background-image: url('page1background.webp');
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@ header {
 body {
     position: absolute;
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--color-main);
     background-repeat: no-repeat, repeat;
     font-family: 'Inter', sans-serif;
 }
@@ -29,7 +29,7 @@ body {
 /*Үндсэн лого*/
 .logo {
     display: inline-block;
-    height: 75px;
+    height: var(--size-logo);
     margin: 0 auto;
 }
 
@@ -38,14 +38,15 @@ svg {
     display: flex;
     align-items: center;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: var(--size-social-icon);
+    height: var(--size-social-icon);
     padding: 5px;
+    opacity: var(--opacity-icon);
 } 
 
 /*Icons mouse event scale*/
 svg:hover{
-    transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/;
+    transform: var(--transform-svg); /*Хулгана очиход 1.2 дахин томорно*/;
 }
 
 /*Button*/
@@ -54,16 +55,16 @@ svg:hover{
     float: left;
     margin: 20px;
     padding: 10px 20px;
-    background-color: var(--nav-bg-color);
+    background-color: var(--color-nav-bg);
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--color-title);
     text-decoration: none;
 }
 
 .button-link:hover {
-    background-color: black;
+    background-color: var(--color-nav-hover-bg);
 }
 
 /* Menu */
@@ -75,7 +76,7 @@ svg:hover{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--nav-bg-color);
+    background-color: var(--color-nav-bg);
     list-style-type: none;
   }
   
@@ -85,16 +86,16 @@ svg:hover{
   }
   
 .menu li a {
-    display: block;
-    padding: 14px 16px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+      display: block;
+      padding: 14px 16px;
+      color: var(--color-title);
+      text-align: center;
+      text-decoration: none;
   }
   
 .menu li a:hover {
-    background-color: #111;
-    color: white;
+      background-color: var(--color-nav-hover-bg);
+      color: var(--color-title);
   }
   
 .menu li.icon {
@@ -112,8 +113,7 @@ svg:hover{
     cursor: pointer;
     border: none;
     font-size: 20px;
-    color: white;
-    background-color: var(--nav-bg-color);
+    color: var(--color-title);
   }
 
   /* Show the menu when the button is clicked */
@@ -136,9 +136,9 @@ h1{
     font-style: italic;
     font-weight: lighter;
     line-height: 85px;
-    color: var(--title-color);
+    color: var(--color-title);
     text-align: center;
-    text-shadow: var(--title-text-shadow);
+    text-shadow: var(--shadow-title);
 }
 
 /*Үндсэн нүүр дээрх Winner's course текст анимейшн*/
@@ -156,9 +156,9 @@ to {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 100px 0 100px 0;
-    padding: 0;
-    background-color: var(--main-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--color-title);
 }
 
 .aboutUs h2 {
@@ -182,7 +182,7 @@ to {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    background-color: white;
+    background-color: var(--color-title);
     text-align: center;
 }
 
@@ -191,7 +191,7 @@ to {
     position: relative;
     margin-top: 3px;
     padding: 50px;
-    background-color: var(--bg-color-2);
+    background-color: var(--color-bg-2);
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
@@ -199,14 +199,14 @@ to {
 .team .titlee {
     margin-bottom: 20px;
     font-size: 36px;
-    color: white;
+    color: var(--color-title);
 }
 
 .team p {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.5;
-    color: white;
+    color: var(--color-title);
 }
 
 .team ul {
@@ -261,14 +261,14 @@ to {
     flex-direction: column;
     justify-content: center;
     padding: 30px 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-title);
 }
 
 /* "Why our courses" text design */
 .OurCourse h2{
     padding: 30px;
     font-size: 50px;
-    font-family: "Helvetica";
+    font-family: var(--font-why-us);
     text-align: center;
 }
 
@@ -278,11 +278,11 @@ to {
     margin-top: 20px;
     padding: 10px;
     font-size: 40px;
-    color: rgb(255, 201, 86);
+    color: var(--color-bg-why-us);
 }
 /*4 icon image mouse event color design */
 .content1:hover .material-symbols-outlined{
-    color: white;
+    color: var(--color-title);
 }
 
 /* 4 sub title design  */
@@ -292,7 +292,7 @@ to {
     margin-bottom: 10px;
     margin-left: 80px;
     font-size: 26px;
-    font-family: "Helvetica";
+    font-family: var(--font-why-us);
     line-height: 1.3em;
 }
 /* 4 sub title text design */
@@ -302,7 +302,7 @@ h3.OurEnglishCourse + p {
     margin-right: 30px;
     margin-left: 80px;
     font-size: 16px;
-    font-family: "Helvetica";
+    font-family: var(--font-why-us);
     line-height: 1.5em;
 }
 
@@ -316,19 +316,19 @@ h3.OurEnglishCourse + p {
     width:98%;
     height:100%;
     margin: 40px 150px;
-    background-color:#fff;
+    background-color: var(--color-title);
 } 
 /* 4 Content-n mouse event color design */
 .content1:hover{
     transform: scale(105%);
-    background-color: rgb(255, 201, 86);
+    background-color: var(--color-bg-why-us);
 }
 /* 4 content-n box design */
 .content1{
     box-shadow: 1px 5px 30px -16px black;
     width: auto;
     transition: 0.25s ease-in-out;
-    border-left: 6px solid rgb(255, 201, 86);
+    border-left: 6px solid var(--color-bg-why-us);
     color:rgba(0, 0, 0, 0.9);
 }
 
@@ -340,8 +340,8 @@ h3.OurEnglishCourse + p {
     align-items: center;
     box-sizing: border-box;
     padding: 50px;
-    background-color: var(--bg-color-2);
-    color: #fff;
+    background-color: var(--color-bg-2);
+    color: var(--color-title);
 }
 
 .contact-header {
@@ -400,9 +400,9 @@ h3.OurEnglishCourse + p {
     color: #444;
 }
 .telephone {
-    width:40px;
-    height: 40px;
-    background-color: white;
+    width: var(--size-contact-icon);
+    height: var(--size-contact-icon);
+    background-color: var(--color-title);
     border-radius: 30%;
 }
 
@@ -415,8 +415,8 @@ footer {
     height: 80px;
     margin-top: 3px;
     padding: 20px;
-    background-color: #282B32;
-    color: #fff;
+    background-color: var(--color-bg-2);
+    color: var(--color-title);
 }
 
 .footer1 {
@@ -433,13 +433,11 @@ footer p {
 }
 
 footer svg {
-    width: 45px;
-    height: 45px;
+    width: var(--size-footer-svg);
+    height: var(--size-footer-svg);
     margin-right: 5px;
     margin-left: 5px;
 }
-
-/* Media queries for mobile devices */
 
 /* Adjustments for smaller screens */
 @media (max-width: 767px) {
@@ -646,5 +644,3 @@ footer svg {
 
     
 }
-
-

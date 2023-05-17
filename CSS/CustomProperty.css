@@ -1,6 +1,6 @@
 /*Custom property*/
 :root {
-    --main-color: #F0F0F1; /*Үндсэн өнгө*/;
+    --main-color: #FFF; /*Үндсэн өнгө*/;
     --nav-bg-color: rgba(3, 3, 3, 0.5); /*Навигац дэвсгэр өнгө*/;
     --nav-hover-bg-color: #111;
     --nav-link-color: #f2f2f2; /*Навигац холбоосын өнгө*/;

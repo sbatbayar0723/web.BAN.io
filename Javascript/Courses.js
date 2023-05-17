@@ -70,3 +70,8 @@ buttons.forEach(function (button, index) {
     coursePrice.textContent = coursePriceText;
   });
 });
+
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}

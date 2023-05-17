@@ -80,27 +80,27 @@ svg:hover{
   }
   
 .menu li {
-      flex-grow: 1;
-      float: left;
+    flex-grow: 1;
+    float: left;
   }
   
 .menu li a {
-      display: block;
-      padding: 14px 16px;
-      color: white;
-      text-align: center;
-      text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
   }
   
 .menu li a:hover {
-      background-color: #111;
-      color: white;
+    background-color: #111;
+    color: white;
   }
   
 .menu li.icon {
-      display: none;
-      flex-grow: 0;
-      margin-left: auto;
+    display: none;
+    flex-grow: 0;
+    margin-left: auto;
   }
   
   /* Add styles for the menu toggle button */
@@ -117,7 +117,7 @@ svg:hover{
 
   /* Show the menu when the button is clicked */
 .menu.active {
-      display: none;
+    display: none;
   }
 
 
@@ -155,9 +155,9 @@ to {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 3px;
+    margin: 100px 0 100px 0;
     padding: 0;
-    background-color: beige;
+    background-color: var(--main-color);
 }
 
 .aboutUs h2 {
@@ -172,6 +172,7 @@ to {
 }
 
 .aboutUs img {
+    border-radius: 50%;
     width: 50%;
 }
 .aboutUs-content{
@@ -420,200 +421,200 @@ footer svg {
 @media (max-width: 767px) {
 
 .container {
-        margin: 20px;
+    margin: 20px;
     }
 
 .header{
-        padding-bottom: 400px;
+    padding-bottom: 400px;
     }
   
     /* Logo */
 .logo img {
-        width: 100%;
+    width: 100%;
     }
   
     /* Navigation menu */
 .menu {
-        display: none;
+    display: none;
       }
     
 .menu.active {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
       }
     
 .menu li {
-          flex-grow: 0;
-          width: 100%;
+    flex-grow: 0;
+    width: 100%;
       }
     
 .menu li a {
-          padding: 10px 0;
+    padding: 10px 0;
       }
     
 .menu li.icon {
-          display: block;
+    display: block;
       }
   
     /* Fix for h1 in mobile */
 h1 {
-        font-size: 40px;
-        line-height: 50px;
+    font-size: 40px;
+    line-height: 50px;
     }
   
     /* About Us section */
 .aboutUs {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     }
 
 .aboutUs img {
-        width: 80%;
+    width: 80%;
     }
 
 .aboutUs-content {
-        padding: 20px;
+    padding: 20px;
     }
 
     /* Team member section */
 .team {
-        padding: 30px;
+    padding: 30px;
     }
 
     /* Why our courses Section */
 .OurCourse h2 {
-        padding: 20px;
-        font-size: 36px;
+    padding: 20px;
+    font-size: 36px;
     }
 
     /* Contact section */
 .contact-section {
-        padding: 30px;
+    padding: 30px;
     }
 
 .contact-details {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     }
 
 .contact-image {
-        flex-basis: 60%;
+    flex-basis: 60%;
     }
 
 .contact-image img {
-        width: 80%;
+    width: 80%;
     }
 
 .contact-info {
-        flex-basis: 100%;
-        margin-top: 30px;
+    flex-basis: 100%;
+    margin-top: 30px;
     }
 
     /* Course section */
 .OurCourse {
-        padding: 30px 0;
+    padding: 30px 0;
     }
 
     /* Course section title */
 .OurCourse h2 {
-        padding: 10px;
-        font-size: 30px;
+    padding: 10px;
+    font-size: 30px;
     }
 
     /* Icon container */
 .icon-container {
-        flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    align-items: center;
     }
 
 .icon-container .material-symbols-outlined {
-        margin: 10px;
-        padding: 10px;
-        font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
     }
 
     /* Subtitle */
 .OurEnglishCourse {
-        margin: 10px;
-        font-size: 20px;
-        text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
     }
 
     /* Subtitle description */
 h3.OurEnglishCourse + p {
-        margin: 10px;
-        font-size: 16px;
-        text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
     }
 
     /* Course content container */
 .container {
-        grid-template-columns: auto;
-        margin: 10px;
+    grid-template-columns: auto;
+    margin: 10px;
     }
 
     /* Course content box */
 .content1 {
-        width: auto;
-        border-left: none;
-        color: rgba(0, 0, 0, 0.9);
+    width: auto;
+    border-left: none;
+    color: rgba(0, 0, 0, 0.9);
     }
 
 .footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        height: auto;
-        padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
       }
     
 .footer1,
 .footer2 {
-          margin: 0;
-          padding: 0;
+    margin: 0;
+    padding: 0;
       }
     
 footer p {
-          font-size: 14px;
+    font-size: 14px;
       }
     
 footer svg {
-          width: 25px;
-          height: 25px;
+    width: 25px;
+    height: 25px;
       }
 
-}
+    }
 
 /* Additional adjustments for smaller screens */
 @media (max-width: 480px) {
 
 .container {
-        margin: 10px;
+    margin: 10px;
     }
 
     /* Team member section */
 .team p {
-        font-size: 16px;
+    font-size: 16px;
     }
 
 .team li {
-        font-size: 18px;
+    font-size: 18px;
     }
 
     /* Contact section */
 .contact-section {
-        padding: 20px;
+    padding: 20px;
     }
 
 .contact-info h3 {
-        font-size: 24px;
+    font-size: 24px;
     }
 
 .contact-info li {
-        font-size: 14px;
+    font-size: 14px;
     }
 
     

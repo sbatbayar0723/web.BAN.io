@@ -139,7 +139,7 @@ h2 {
 
 
 /*button*/
-button {
+.button-link {
     position: static;
     float: left;
     margin: 20px;
@@ -149,9 +149,10 @@ button {
     border: none;
     border-radius: 5px;
     color: #fff;
+    text-decoration: none;
 }
 
-button:hover {
+.button-link:hover {
     background-color: black;
 }
 

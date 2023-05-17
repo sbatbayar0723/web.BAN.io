@@ -315,7 +315,7 @@ h3.OurEnglishCourse + p {
 } 
 /* 4 Content-n mouse event color design */
 .content1:hover{
-    transform: scale(105%);
+    transform: scale(1.05);
     background-color: var(--color-bg-why-us);
 }
 /* 4 content-n box design */

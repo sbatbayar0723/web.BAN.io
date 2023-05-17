@@ -63,18 +63,6 @@ svg {
 .menu li a {
     display: block;
     padding: 14px 16px;
-<<<<<<< HEAD
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-.menu li a:hover {
-    background-color: #111;
-    color: white;
-  }
-  
-=======
     color: var(--color-title);
     text-align: center;
     text-decoration: none;
@@ -100,7 +88,6 @@ svg {
     text-align: right;
 }
 
->>>>>>> c91b59b322c8d4266e1691a40d2786c0a1cf4bfd
 .menu li.icon {
     display: none;
     flex-grow: 0;
@@ -189,15 +176,9 @@ footer {
     bottom: 0;
     width: 100%;
     height: 40px;
-<<<<<<< HEAD
-    padding: 20px;
-    background-color: #282B32;
-    color: #fff;
-=======
     padding: 40px;
     background-color: var(--color-bg-2);
     color: var(--color-title);
->>>>>>> c91b59b322c8d4266e1691a40d2786c0a1cf4bfd
 }
 
 .footer1 {

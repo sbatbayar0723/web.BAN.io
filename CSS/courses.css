@@ -185,9 +185,8 @@ body {
 
 /*.button:hover{
     background-color: rgba(0, 0, 0, 0.2);
-}
+}*/
 .text{
-    #slider-span1:target ~ .image-slider #img1,;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,18 +292,6 @@ svg {
 .menu li a {
     display: block;
     padding: 14px 16px;
-<<<<<<< HEAD
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-.menu li a:hover {
-    background-color: #111;
-    color: white;
-  }
-  
-=======
     color: var(--color-title);
     text-align: center;
     text-decoration: none;
@@ -315,7 +302,6 @@ svg {
     color: var(--color-title);
 }
 
->>>>>>> c91b59b322c8d4266e1691a40d2786c0a1cf4bfd
 .menu li.icon {
     display: none;
     flex-grow: 0;
@@ -357,19 +343,6 @@ svg {
 .button-link:hover {
     background-color: var(--color-nav-hover-bg);
 }
-
-
-
-/* мобайл хөтөчийн хэсгийг харуулах */
-
-@media only screen and (max-width: 991px) {
-}
-body {
-      background-color: #aaa;
-  }
-h1 {
-      color: blue;
-  }
 
 
 /* Footer styling */

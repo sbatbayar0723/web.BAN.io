@@ -1,17 +1,9 @@
+@import url("CustomProperty.css");
+
 /*Бүх элементүүдэд*/
 * {
     margin: 0px;
     padding: 0px;
-}
-
-/*Custom property*/
-:root {
-    --main-color: #F0F0F1; /*Үндсэн өнгө*/;
-    --nav-bg-color: rgba(3, 3, 3, 0.5); /*Навигац дэвсгэр өнгө*/;
-    --nav-link-color: #f2f2f2; /*Навигац холбоосын өнгө*/;
-    --nav-link-hover-bg-color: #ddd; /*Навигац холбоосын дэвсгэр өнгө*/;
-    --title-color: #fff; /*Гарчгийн өнгө*/;
-    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9); /*Гарчгийн сүүдэр*/;
 }
 
 /*Нүүр хуудас*/
@@ -42,7 +34,7 @@ body {
 }
 
 /*Сошиал медиа icon*/
-.icons {
+svg {
     display: flex;
     align-items: center;
     float: right;
@@ -52,7 +44,7 @@ body {
 } 
 
 /*Icons mouse event scale*/
-.icons:hover{
+svg:hover{
     transform: scale(1.2); /*Хулгана очиход 1.2 дахин томорно*/;
 }
 
@@ -216,7 +208,7 @@ to {
     position: relative;
     margin-top: 3px;
     padding: 50px;
-    background-color:#282B32;
+    background-color: var(--bg-color-2);
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
@@ -343,7 +335,7 @@ h3.OurEnglishCourse + p {
     align-items: center;
     box-sizing: border-box;
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: var(--bg-color-2);
     color: #fff;
 }
 
@@ -435,7 +427,7 @@ footer p {
     font-size: 18px;
 }
 
-.footer-icon {
+footer svg {
     width: 45px;
     height: 45px;
     margin-right: 5px;

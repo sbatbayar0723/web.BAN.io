@@ -1,0 +1,10 @@
+/*Custom property*/
+:root {
+    --main-color: #F0F0F1; /*Үндсэн өнгө*/;
+    --nav-bg-color: rgba(3, 3, 3, 0.5); /*Навигац дэвсгэр өнгө*/;
+    --nav-link-color: #f2f2f2; /*Навигац холбоосын өнгө*/;
+    --nav-link-hover-bg-color: #ddd; /*Навигац холбоосын дэвсгэр өнгө*/;
+    --title-color: #fff; /*Гарчгийн өнгө*/;
+    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9); /*Гарчгийн сүүдэр*/;
+    --bg-color-2: #282B32;
+}

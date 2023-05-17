@@ -1,13 +1,4 @@
-:root {
-    --main-color: #F0F0F1;
-    --nav-bg-color: rgba(3, 3, 3, 0.5);
-    --nav-link-color: #f2f2f2;
-    --nav-link-hover-bg-color: #ddd;
-    --title-color: #fff;
-    --title-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.9);
-}
-
-
+@import url("CustomProperty.css");
 
 body {
     margin: 0;
@@ -161,7 +152,6 @@ body {
 }
 
 
-
 .image-slider{
     display: flex;
     justify-content: center;
@@ -258,7 +248,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 75px;
+    height: 65px;
     margin: 0 auto;
 }
 
@@ -285,32 +275,40 @@ body {
     display: flex;
 }
 
-.nav  {
+.menu {
     display: flex;
-    justify-content: center;
-    position: relative; /* Add position relative */;
-    z-index: 1; /* Add z-index to make sure it is on top of the slider */;
+    flex-wrap: wrap;
+    justify-content: space-between;
     overflow: hidden;
-    margin-top: 5px;
-    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: var(--nav-bg-color);
     list-style-type: none;
 }
 
-.nav li {
-    margin: 0 10px;
+.menu li {
+    flex-grow: 1;
+    float: left;
 }
 
-.nav li a {
-    padding: 15px 30px;
-    font-size: 17px;
-    color: var(--nav-link-color);
+.menu li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
     text-align: center;
     text-decoration: none;
 }
 
-.nav li a:hover:not(.active) {
+.menu li a:hover {
     background-color: #111;
+    color: white;
+}
+
+.menu li.icon {
+    display: none;
+    flex-grow: 0;
+    margin-left: auto;
 }
 
 /*Button*/

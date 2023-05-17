@@ -38,10 +38,10 @@ svg {
     display: flex;
     align-items: center;
     float: right;
+    opacity: var(--opacity-icon);
     width: var(--size-social-icon);
     height: var(--size-social-icon);
     padding: 5px;
-    opacity: var(--opacity-icon);
 } 
 
 /*Icons mouse event scale*/
@@ -86,16 +86,16 @@ svg:hover{
   }
   
 .menu li a {
-      display: block;
-      padding: 14px 16px;
-      color: var(--color-title);
-      text-align: center;
-      text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    color: var(--color-title);
+    text-align: center;
+    text-decoration: none;
   }
   
 .menu li a:hover {
-      background-color: var(--color-nav-hover-bg);
-      color: var(--color-title);
+    background-color: var(--color-nav-hover-bg);
+    color: var(--color-title);
   }
   
 .menu li.icon {
@@ -169,13 +169,13 @@ to {
 .aboutUs p {
     margin-bottom: 20px;
     font-size: 18px;
-    line-height: 1.5;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .aboutUs img {
-    border-radius: 50%;
     width: 50%;
+    border-radius: 50%;
 }
 .aboutUs-content{
     display: flex;
@@ -246,14 +246,9 @@ to {
     display: inline-flex;
   }
   
-  .team-member {
-    margin: 0 10px;
+.team-member {
+      margin: 0 10px;
   }
-  
-  
-  
-
-
 
 /*Why our courses Section*/
 .OurCourse{
@@ -507,6 +502,9 @@ h1 {
 .team {
     padding: 30px;
     }
+.teamp{
+    display: block;
+}
 
     /* Why our courses Section */
 .OurCourse h2 {

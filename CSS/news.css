@@ -92,6 +92,7 @@ h2 {
 .imagecontainer {
     position: absolute;
     width: 80%;
+	padding-top: 60px;
     padding: 10px;
     --gap: 4px;
 	--num-cols: 4;

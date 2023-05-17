@@ -73,11 +73,14 @@ var contactLink = document.getElementById("contact-link");
 //   });
 // });
 
-function toggleNav() {
-  var menu = document.getElementById("myMenu");
-  if (menu.classList.contains("responsive")) {
-    menu.classList.remove("responsive");
-  } else {
-    menu.classList.add("responsive");
-  }
+// Add this JavaScript to your existing scripts
+
+// Add a script to toggle the menu
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
 }
+
+
+
+

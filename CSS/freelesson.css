@@ -180,9 +180,9 @@ footer {
     padding: 20px;
     background-color: #282B32;
     color: #fff;
-    padding: 40px;
-    background-color: #282B32;
-    color: #fff;
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
 }
 
 .footer1 {

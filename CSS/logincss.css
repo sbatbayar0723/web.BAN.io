@@ -1,88 +1,88 @@
 body {
-    float: right;
-    margin: 0;
-    padding-right: 300px;
-    background-color:rgb(253, 253, 253);
-    background-image: url(logInlogo.png);
-    background-repeat: no-repeat;
-    background-size:  contain;
-    font-family: 'Inter', sans-serif;
+  float: right;
+  margin: 0;
+  padding-right: 300px;
+  font-family: 'Inter', sans-serif;
+  background-color:rgb(253, 253, 253);
+  background-image: url(logInlogo.png);
+  background-size:  contain;
+  background-repeat: no-repeat;
 }
 
 .back {
-    margin-top: 20px;
-    margin-left: -900px;
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    background-color: grey;
-    border-radius: 5%;
-    color: white;
+  background-color: grey;
+  border-radius: 5%;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-left: -900px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 h1 {
-    margin: 0 0 20px 0;
-    color: black;
+  color: black;
+  margin: 0 0 20px 0;
 }
 
 form {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 label {
-    font-weight: bold;
     color: black;
+  font-weight: bold;
 }
 
 input {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0069d9;
+  background-color: #0069d9;
 }
 
 p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .account{
-    color: black;
+  color: black;
 }
 
 .sign{
-    color: #007bff;
+  color: #007bff;
 }
 
 a{
-    position: absolute;
-    float: right;
-    padding: 20px;
+  position: absolute;
+  float: right;
+  padding: 20px;
 }

@@ -28,6 +28,7 @@ body {
     display: inline-block;
     height: var(--size-logo);
     margin: 0 auto;
+    filter: brightness(50%);
 }
 
 
@@ -201,11 +202,15 @@ footer p {
     font-size: 18px;
 }
 
-.footer-icon {
+footer svg {
     width: var(--size-footer-svg);
     height: var(--size-footer-svg);
     margin-right: 5px;
     margin-left: 5px;
+}
+
+footer svg:hover{
+    transform: var(--transform-svg); /*Хулгана очиход 1.2 дахин томорно*/;
 }
 
 @media (max-width: 767px) {

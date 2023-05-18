@@ -10,7 +10,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: var(--color-main);
     background-image: url(logInlogo.png);
     background-repeat: no-repeat;
     background-size: 60%;
@@ -23,6 +23,7 @@ body {
     display: inline-block;
     height: var(--size-logo);
     margin: 0 auto;
+    filter: brightness(50%);
 }
 
 
@@ -172,7 +173,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* or position: absolute; */;
+    position: relative; /* or position: absolute; */;
     bottom: 0;
     width: 100%;
     height: 40px;
@@ -194,11 +195,15 @@ footer p {
     font-size: 18px;
 }
 
-.footer-icon {
+footer svg {
     width: var(--size-footer-svg);
     height: var(--size-footer-svg);
     margin-right: 5px;
     margin-left: 5px;
+}
+
+footer svg:hover{
+    transform: var(--transform-svg); /*Хулгана очиход 1.2 дахин томорно*/;
 }
 
 @media (max-width: 767px) {

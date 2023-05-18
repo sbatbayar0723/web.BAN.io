@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="zxx">
   <head>
     <meta charset="UTF-8" />
@@ -8,43 +7,245 @@
     <meta name="title" content="Winner's Course" />
     <meta
       name="keywords"
-      content="WC, Winner's Course, winner, course, english"
-    />
+      content="WC, Winner's Course, winner, course, english" />
     <meta
       name="description"
-      content=" Монголын хүн болгоныг Англи хэлтэй болгох зорилготой Англи хэлний Сургалт!"
-    />
+      content=" Монголын хүн болгоныг Англи хэлтэй болгох зорилготой Англи хэлний Сургалт!"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winner's Course</title>
     <link rel="stylesheet" href="CSS/winner.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
-    </style>
-  </head>
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");</style>
+    </head>
+    <body>
+      <header>
+        <h1>WINNER'S COURSE</h1>
+        <div style="display: flex; justify-content: space-between">
+          <a href="login.html" class="button-link">Login</a>
+          <img class="logo" src="Pictures/page1logo.png" alt="logo" />
+          <div style="display: flex">
+            <a
+              style="display: flex; align-items: center"
+              href="https://www.youtube.com/@TemuulenGanzorig">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
+                <g>
+                  <polygon points="78.9,450.3 162.7,401.1 78.9,351.9  "/>
+                  <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8   c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1   V446.8z"/>
+                </g>
+              </svg>
+            </a>
+            <a
+              style="display: flex; align-items: center"
+              href="https://www.instagram.com/winners_course/?hl=en">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
+                <g>
+                  <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8   c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"/>
+                  <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346  "/>
+                  <path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157   c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"/>
+                  <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8   c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157   c27.3,0,49.5,22.2,49.5,49.5V374.7z"/>
+                </g>
+              </svg>
+            </a>
+            <a
+              style="display: flex; align-items: center"
+              href="https://www.facebook.com/winnerscourse">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
+                <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3  v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2  c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav>
+          <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+          <ul class="menu" id="myMenu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#aboutUs">ABOUT US</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="freelesson.html">FREE LESSON</a></li>
+            <li><a href="#test">TEST</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <body>
-    <header>
-      <h1>WINNER'S COURSE</h1>
-      <div style="display: flex; justify-content: space-between">
-        <a href="login.html" class="button-link">Login</a>
-        <img class="logo" src="Pictures/page1logo.png" alt="logo" />
-        <div style="display: flex">
-          <a
-            style="display: flex; align-items: center"
-            href="https://www.youtube.com/@TemuulenGanzorig"
+  
+      <section class="aboutUs">
+        <img src="Pictures/aboutus.webp" alt="About Us" />
+        <div class="aboutUs-content">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque
+            adipiscing commodo elit at imperdiet dui accumsan. Ornare lectus sit
+            amet est placerat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque
+            adipiscing commodo elit at imperdiet dui accumsan. Ornare lectus sit
+            amet est placerat.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="team">
+        <h2 class="titlee">Our Team Members</h2>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="teamp">
+          <div class="team-member">
+            <img class="team-img" src="Pictures/TeamMemberBataa.png" alt="teamPhoto" />
+            <p>
+              <ul class="stars">
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+              </ul>
+            </p>
+            <p>Batbayar <small>Sainjargal</small></p>
+            <p>Education: Bachelor of SE</p>
+          </div>
+          <div class="team-member">
+            <img class="team-img" src="Pictures/TeamMemberNaraa.png" alt="teamPhoto" />
+            <p>
+              <ul class="stars">
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="non-star"><img src="Pictures/star.png" alt="star"></li>
+              </ul>
+            </p>
+            <p>Naranchimeg <small>Lhagvaa</small></p>
+            <p>Education: Bachelor of SE</p>
+          </div>
+          <div class="team-member">
+            <img class="team-img" src="Pictures/TeamMemberAmina.png" alt="teamPhoto" />
+            <p>
+              <ul class="stars">
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="star"><img src="Pictures/star.png" alt="star"></li>
+                <li class="non-star"><img src="Pictures/star.png" alt="star"></li>
+              </ul>
+            </p>
+            <p>Aminzaya <small>Tserendejid</small></p>
+            <p>Education: Bachelor of IS</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="OurCourse">
+        <h2>Why Our Courses?</h2>
+        <div style="display: flex; width: 100%">
+          <div class="container">
+            <div class="content1">
+              <div class="icon-container">
+                <span class="material-symbols-outlined"> menu_book </span>
+              </div>
+              <h3 class="OurEnglishCourse">Learn Real English</h3>
+              <p>
+                Step away from textbooks. I’ll help you learn real English from
+                real English speakers!
+              </p>
+            </div>
+            <div class="content1">
+              <div class="icon-container">
+                <span class="material-symbols-outlined"> psychology </span>
+                <h3 class="OurEnglishCourse">Understand Fast English</h3>
+                <p>
+                  Finally stop using subtitles and understand your favorite movies
+                  and TV shows.
+                </p>
+              </div>
+            </div>
+            <div class="content1">
+              <div class="icon-container">
+                <span class="material-symbols-outlined"> record_voice_over </span>
+                <h3 class="OurEnglishCourse">Speak Natural English</h3>
+                <p>
+                  Speak confidently with other course members from around the
+                  world.
+                </p>
+              </div>
+            </div>
+            <div class="content1">
+              <div class="icon-container">
+                <span class="material-symbols-outlined"> check </span>
+                <h3 class="OurEnglishCourse">Enjoy Using English</h3>
+                <p>
+                  Stop feeling nervous and frustrated when you forget the right
+                  words.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="contact-section" id="contact">
+        <div class="contact-header">
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <address>
+              <ul>
+                <li>
+                  <img
+                    class="telephone"
+                    src="Pictures/phone-svgrepo-com.svg"
+                    alt="phone-icon"
+                  /><i class="fa fa-phone"></i> Phone:
+                  <a href="tel:+97686152145">8615-2145</a>
+                </li>
+                <li>
+                  <img
+                    class="telephone"
+                    src="Pictures/mail-open-svgrepo-com.svg"
+                    alt="email-icon"
+                  /><i class="fa fa-envelope"></i> Email:
+                  <a href="mailto:winnersweb@example.com"
+                    >winnersweb@example.com</a
+                  >
+                </li>
+                <li>
+                  <img
+                    class="telephone"
+                    src="Pictures/map-pin-svgrepo-com.svg"
+                    alt="map-icon"
+                  /><i class="fa fa-map-marker"></i> Address: Tokyo St,
+                  Ulaanbaatar
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="contact-image">
+            <img src="Pictures/map.PNG" alt="Contact Image" />
+          </div>
+        </div>
+      </section>
+
+      
+      <footer>
+        <div class="footer1">
+          <p>Copyright @2023</p>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/winnerscourse"
             ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
-              <g>
-                <polygon points="78.9,450.3 162.7,401.1 78.9,351.9  "/>
-                <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8   c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1   V446.8z"/>
-              </g>
+              <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3  v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2  c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
               </svg></a>
-          <a
-            style="display: flex; align-items: center"
-            href="https://www.instagram.com/winners_course/?hl=en"
+          <a href="https://www.instagram.com/winners_course/?hl=en"
             ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
               <g>
                 <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8   c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"/>
@@ -53,197 +254,18 @@
                 <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8   c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157   c27.3,0,49.5,22.2,49.5,49.5V374.7z"/>
               </g>
               </svg></a>
-          <a
-            style="display: flex; align-items: center"
-            href="https://www.facebook.com/winnerscourse"
+          <a href="https://www.youtube.com/@TemuulenGanzorig"
             ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
-              <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3  v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2  c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
+              <g>
+                <polygon points="78.9,450.3 162.7,401.1 78.9,351.9  "/>
+                <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8   c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1   V446.8z"/>
+              </g>
               </svg></a>
         </div>
-      </div>
-      <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <div class="footer2">
+          <p>Designed by BAN team</p>
         </div>
-        <ul class="menu" id="myMenu">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#aboutUs">ABOUT US</a></li>
-          <li><a href="news.html">NEWS</a></li>
-          <li><a href="courses.html">COURSES</a></li>
-          <li><a href="freelesson.html">FREE LESSON</a></li>
-          <li><a href="#test">TEST</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
-        </ul>
-      </nav>
-      
-    </header>
-    <section class="aboutUs">
-      <img src="Pictures/aboutus.webp" alt="About Us" />
-      <div class="aboutUs-content">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi
-          scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque
-          adipiscing commodo elit at imperdiet dui accumsan. Ornare lectus sit
-          amet est placerat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi
-          scelerisque eu ultrices vitae auctor eu augue. At erat pellentesque
-          adipiscing commodo elit at imperdiet dui accumsan. Ornare lectus sit
-          amet est placerat.
-        </p>
-      </div>
-    </section>
-    <section class="team">
-      <h2 class="titlee">Our Team Members</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="teamp">
-        <div class="team-member">
-          <img src="Pictures/TeamMemberBataa.png" alt="teamPhoto" />
-          <p>Batbayar Sainjargal</p>
-        </div>
-        <div class="team-member">
-          <img src="Pictures/TeamMemberNaraa.png" alt="teamPhoto" />
-          <p>Naranchimeg Lhagvaa</p>
-        </div>
-        <div class="team-member">
-          <img src="Pictures/TeamMemberAmina.png" alt="teamPhoto" />
-          <p>Aminzaya Tserendejid</p>
-        </div>
-      </div>
-      
-  </div>
-      
-    </section>
-
-    <section class="OurCourse">
-      <h2>Why Our Courses?</h2>
-      <div style="display: flex; width: 100%">
-        <div class="container">
-          <div class="content1">
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> menu_book </span>
-            </div>
-            <h3 class="OurEnglishCourse">Learn Real English</h3>
-            <p>
-              Step away from textbooks. I’ll help you learn real English from
-              real English speakers!
-            </p>
-          </div>
-          <div class="content1">
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> psychology </span>
-              <h3 class="OurEnglishCourse">Understand Fast English</h3>
-              <p>
-                Finally stop using subtitles and understand your favorite movies
-                and TV shows.
-              </p>
-            </div>
-          </div>
-          <div class="content1">
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> record_voice_over </span>
-              <h3 class="OurEnglishCourse">Speak Natural English</h3>
-              <p>
-                Speak confidently with other course members from around the
-                world.
-              </p>
-            </div>
-          </div>
-          <div class="content1">
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> check </span>
-              <h3 class="OurEnglishCourse">Enjoy Using English</h3>
-              <p>
-                Stop feeling nervous and frustrated when you forget the right
-                words.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="contact-header">
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div class="contact-details">
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <address>
-            <ul>
-              <li>
-                <img
-                  class="telephone"
-                  src="Pictures/phone-svgrepo-com.svg"
-                  alt="phone-icon"
-                /><i class="fa fa-phone"></i> Phone:
-                <a href="tel:+97686152145">8615-2145</a>
-              </li>
-              <li>
-                <img
-                  class="telephone"
-                  src="Pictures/mail-open-svgrepo-com.svg"
-                  alt="email-icon"
-                /><i class="fa fa-envelope"></i> Email:
-                <a href="mailto:winnersweb@example.com"
-                  >winnersweb@example.com</a
-                >
-              </li>
-              <li>
-                <img
-                  class="telephone"
-                  src="Pictures/map-pin-svgrepo-com.svg"
-                  alt="map-icon"
-                /><i class="fa fa-map-marker"></i> Address: Tokyo St,
-                Ulaanbaatar
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="contact-image">
-          <img src="Pictures/map.PNG" alt="Contact Image" />
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer1">
-        <p>Copyright @2023</p>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/winnerscourse"
-          ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
-            <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3  v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2  c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
-            </svg></a>
-        <a href="https://www.instagram.com/winners_course/?hl=en"
-          ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
-            <g>
-              <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8   c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"/>
-              <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346  "/>
-              <path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157   c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"/>
-              <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8   c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157   c27.3,0,49.5,22.2,49.5,49.5V374.7z"/>
-            </g>
-            </svg></a>
-        <a href="https://www.youtube.com/@TemuulenGanzorig"
-          ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="-143 145 512 512" xml:space="preserve">
-            <g>
-              <polygon points="78.9,450.3 162.7,401.1 78.9,351.9  "/>
-              <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8   c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1   V446.8z"/>
-            </g>
-            </svg></a>
-      </div>
-      <div class="footer2">
-        <p>Designed by BAN team</p>
-      </div>
-    </footer>
-    <script src="Javascript/Index.js"></script>
-  </body>
+      </footer>
+      <script src="Javascript/Index.js"></script>
+    </body>
 </html>

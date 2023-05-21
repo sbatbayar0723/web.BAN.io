@@ -220,7 +220,7 @@ to {
 }
 
 .team-img:hover{
-    transform: scale(1.2);
+    transform: scale(1.06);
 }
 
 .teamp {
@@ -331,7 +331,7 @@ h3.OurEnglishCourse + p {
 }
 /* 4 content-n box design */
 .content1{
-    box-shadow: 1px 5px 30px -16px black;
+    box-shadow: 1px 5px 20px -16px black;
     width: auto;
     transition: 0.25s ease-in-out;
     border-left: 6px solid var(--color-bg-why-us);

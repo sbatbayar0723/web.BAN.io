@@ -53,7 +53,7 @@ class Course extends HTMLElement {
 //course detail huudasruu course iin id-iin hamt shiljih function
 const routing = (id) => {
   console.log(id);
-  window.location.replace("web.BAN.io/course_detail.html?id=" + id);
+  window.location.replace("course_detail.html?id=" + id);
 };
 window.customElements.define("course-info", Course);
 // module.exports = Course;

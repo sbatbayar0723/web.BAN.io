@@ -410,12 +410,8 @@ h3.OurEnglishCourse + p {
     height: var(--size-contact-icon);
     background-color: var(--color-title);
     border-radius: 30%;
-    text-decoration: none;
 }
-address a{
-    color: #fff;
-    text-decoration: none;
-}
+
 
 /* Footer styling */
 footer {

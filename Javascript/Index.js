@@ -77,10 +77,6 @@ var contactLink = document.getElementById("contact-link");
 
 // Add a script to toggle the menu
 function toggleMenu() {
-  var menu = document.querySelector('.menu');
-  menu.classList.toggle('active');
+  var menu = document.querySelector(".menu");
+  menu.classList.toggle("active");
 }
-
-
-
-

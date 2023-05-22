@@ -1,0 +1,158 @@
+.footer-main {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-bg-2);
+  color: var(--color-title);
+}
+.footer_text {
+  font-size: 18px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-nav-bg);
+  list-style-type: none;
+}
+
+.menu li {
+  flex-grow: 1;
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 16px;
+  color: var(--color-title);
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: var(--color-nav-hover-bg);
+  color: var(--color-title);
+}
+
+.menu li.icon {
+  display: none;
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+/* Add styles for the menu toggle button */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: var(--color-title);
+}
+
+/* Show the menu when the button is clicked */
+.menu.active {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .footer-main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    padding: 10px;
+    background-color: var(--color-bg-2);
+    color: var(--color-title);
+  }
+
+  .footer_text {
+    font-size: 14px;
+  }
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* overflow: hidden; */
+  width: 100%;
+  margin-top: 20px;
+  /* flex-wrap: wrap; */
+}
+.image-slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.slides-div:hover {
+  transform: scale(110%);
+}
+.slides-div {
+  margin: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  text-align: center;
+}
+.img_render {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateX(180deg);
+}

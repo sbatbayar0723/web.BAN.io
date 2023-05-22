@@ -16,8 +16,8 @@ fetch(`https://winners-server.vercel.app/api/course/${id}`)
       "payment"
     )[0].textContent = `payment : ${pagedata.price}`;
     document.getElementsByClassName(
-      "duration"
-    )[0].textContent = `duration : ${pagedata.hour_duration}`;
+      "instractor"
+    )[0].textContent = `instractor : ${pagedata.instractor}`;
     document.getElementsByClassName(
       "dow"
     )[0].textContent = `days of week : ${pagedata.days_of_week}`;

@@ -447,11 +447,12 @@ footer p {
   }
 }
 .button_back {
-  border: none;
-  background-color: green;
+  border-radius: 10%;
+  background-color:var(--color-nav-bg);
   padding: 10px 20px;
   transition: 0.25s ease-in-out;
   cursor: pointer;
+  color: #fff;
 }
 .button_back:hover {
   transform: scale(110%);

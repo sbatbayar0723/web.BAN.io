@@ -1,4 +1,6 @@
 // neg course iin medeelliig haruulah custom component
+//
+
 class Course extends HTMLElement {
   generateHTML = () => {
     this.innerHTML = `<div class="flip-box" onclick="routing('${this.elm._id}')">
@@ -76,34 +78,6 @@ fetch("https://winners-server.vercel.app/api/course")
   .catch((error) => {
     console.error("Error:", error);
   });
-
-// Get references to the elements
-// const courseInfo = document.querySelectorAll(".course-info");
-// const courseTitle = document.querySelector("#course-title");
-// const courseDescription = document.querySelector("#course-description");
-// const coursePrice = document.querySelector("#course-price");
-
-// // Loop through each button and add an event listener
-// const buttons = document.querySelectorAll(".button");
-// buttons.forEach(function (button, index) {
-//   button.addEventListener("click", function () {
-//     // Hide all the course info elements
-//     courseInfo.forEach(function (info) {
-//       info.style.display = "none";
-//     });
-//     // Show the course info for the corresponding button
-//     const courseId = "course-info-" + (index + 1);
-//     const course = document.querySelector(`#${courseId}`);
-//     course.style.display = "block";
-//     // Update the course details in the course info section
-//     const courseTitleText = course.querySelector("h2").textContent;
-//     const courseDescriptionText = course.querySelector("p").textContent;
-//     const coursePriceText = "$99"; // Replace this with your actual logic to calculate the course price
-//     courseTitle.textContent = courseTitleText;
-//     courseDescription.textContent = courseDescriptionText;
-//     coursePrice.textContent = coursePriceText;
-//   });
-// });
 
 function toggleMenu() {
   var menu = document.querySelector(".menu");

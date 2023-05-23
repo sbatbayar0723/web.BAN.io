@@ -12,6 +12,7 @@ fetch(`https://winners-server.vercel.app/api/course/${id}`)
   .then((pagedata) => {
     console.log(pagedata);
     document.getElementsByClassName("course_img")[0].src = pagedata.image;
+
     document.getElementsByClassName(
       "payment"
     )[0].textContent = `payment : ${pagedata.price}`;

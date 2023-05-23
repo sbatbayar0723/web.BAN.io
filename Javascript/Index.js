@@ -1,23 +1,22 @@
-// // module.exports = Course;
-// fetch("http://127.0.0.1:5501/public/json/courses.json")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     data.map((el, i) => {
-//       console.log(el);
-//       const newElm = document.createElement("div");
-//       newElm.innerHTML = new Course(
-//         el.course_length,
-//         el.days_of_week,
-//         el.hour_duration,
-//         el.payment
-//       ).render();
+fetch("http://127.0.0.1:5501/public/json/courses.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.map((el, i) => {
+      console.log(el);
+      const newElm = document.createElement("div");
+      newElm.innerHTML = new Course(
+        el.course_length,
+        el.days_of_week,
+        el.hour_duration,
+        el.payment
+      ).render();
 
-//       document.getElementsByClassName("team")[0].appendChild(newElm);
-//     });
-//   })
-//   .catch((error) => {
-//     console.error("Error:", error);
-//   });
+      document.getElementsByClassName("team")[0].appendChild(newElm);
+    });
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 // select the "ABOUT US" link in the navigation menu
 const aboutUsLink = document.querySelector('a[href="#aboutUs"]');

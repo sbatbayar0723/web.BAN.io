@@ -1,5 +1,6 @@
+
 // neg course iin medeelliig haruulah custom component
-//
+
 
 class Course extends HTMLElement {
   generateHTML = () => {
@@ -55,7 +56,10 @@ class Course extends HTMLElement {
 //course detail huudasruu course iin id-iin hamt shiljih function
 const routing = (id) => {
   console.log(id);
-  window.location.replace("course_detail.html?id=" + id);
+  const myCourse = document.querySelector("seen-course");
+  myCourse.AddSeenCourse(this);
+ window.location.replace("course_detail.html?id=" + id);
+  
 };
 window.customElements.define("course-info", Course);
 // module.exports = Course;
